@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.jose.guiacom"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 21
+        versionName "3.8.1.2"
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile files('libs/GenAsync.jar')
+    compile files('libs/KGJsonConverter.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile 'com.github.amigold.fundapter:library:1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/AndroidMask-1.0.0.jar')
+}

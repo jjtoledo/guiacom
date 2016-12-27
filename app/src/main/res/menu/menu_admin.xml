@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jose.guiacom.MainActivity">
+
+    <item
+        android:id="@+id/pendentes"
+        android:orderInCategory="100"
+        android:title="@string/menu_pendentes"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pendentesPremium"
+        android:orderInCategory="100"
+        android:title="@string/menu_pendentes_premium"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/empresas"
+        android:orderInCategory="100"
+        android:title="@string/menu_empresas"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/estatisticas"
+        android:orderInCategory="100"
+        android:title="@string/menu_estatisticas"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/cadastrar"
+        android:orderInCategory="100"
+        android:title="@string/menu_cadastrar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sair"
+        android:orderInCategory="100"
+        android:title="@string/menu_sair"
+        app:showAsAction="never" />
+
+</menu>

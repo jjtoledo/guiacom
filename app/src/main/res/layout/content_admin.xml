@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50sp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.jose.guiacom.AdminActivity"
+        tools:showIn="@layout/activity_admin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/menu_message"
+            android:id="@+id/txtAdmin"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_pendentes"
+            android:id="@+id/btnPendentes"
+            android:ems="30"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/txtAdmin"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_pendentes_premium"
+            android:id="@+id/btnPendentesPremium"
+            android:ems="30"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/btnPendentes"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_empresas"
+            android:id="@+id/btnEmpresas"
+            android:minEms="30"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/btnPendentesPremium"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_estatisticas"
+            android:id="@+id/btnEstatisticas"
+            android:ems="30"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/btnEmpresas"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_cadastrar"
+            android:id="@+id/btnCadastrar"
+            android:ems="30"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/btnEstatisticas"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_sair"
+            android:id="@+id/btnSair"
+            android:ems="10"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/btnCadastrar"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jose.guiacom.MainActivity">
+
+    <item
+        android:id="@+id/pesquisar"
+        android:icon="@drawable/ic_search"
+        android:title="@string/title_activity_search"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/anuncie"
+        android:icon="@drawable/ic_anunciar"
+        android:title="@string/anuncie"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/cadastro"
+        android:orderInCategory="100"
+        android:title="@string/cadastro_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/catalogo"
+        android:orderInCategory="100"
+        android:title="@string/btnCatalogo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/contato"
+        android:orderInCategory="100"
+        android:title="@string/btnContato"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/admin"
+        android:orderInCategory="100"
+        android:title="@string/btnAdm"
+        app:showAsAction="never" />
+
+</menu>

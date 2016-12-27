@@ -1,0 +1,216 @@
+<resources>
+    <!-- Geral / Menu -->
+    <string name="app_name">Guiacom</string>
+    <string name="action_settings">Menu</string>
+    <string name="btnCatalogo">Sobre o Guiacom</string>
+    <string name="btnAdm">Área Administrativa</string>
+    <string name="btnContato">Entre em Contato</string>
+    <string name="dialog_troca_cidade_title">Selecione uma cidade</string>
+
+    <!-- Main -->
+    <string name="anuncie">Anuncie grátis</string>
+    <string name="cadastro_menu">Cadastre grátis</string>
+    <string name="txtCities">CIDADES CADASTRADAS</string>
+    <string name="txtCidade">Manhuaçu - MG</string>
+    <string name="txtAnunciantes">Anunciantes Premium em:</string>
+    <string name="txtNenhum">Esta cidade não possui Anunciantes Premium, apenas cadastros grátis. Clique em pesquisar.</string>
+    <string name="txtHistoria">Conheça a história da cidade</string>
+
+    <!-- Pesquisar -->
+    <string name="title_activity_search">Pesquisar</string>
+    <string name="txtInfo">Pesquisando empresas em:</string>
+    <string name="txtSearch">Insira o nome da empresa</string>
+
+    <!-- Segmentos -->
+    <string name="title_activity_segment">Segmentos</string>
+    <string name="txtInfoSeg">Pesquisando segmentos em:</string>
+
+    <!-- Empresas -->
+    <string name="segmento">NOME SEGMENTO</string>
+
+    <!-- Cadastro -->
+    <string name="anunciar">ANUNCIAR</string>
+    <string name="inserir">Inserir Empresa</string>
+    <string name="cadastro">Faça seu cadastro. É grátis!</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="segmento_hint">* Tipo de segmento</string>
+    <string name="empresa_hint">* Nome da empresa</string>
+    <string name="presentation_hint">Breve descrição da empresa</string>
+    <string name="responsavel_hint">* Nome do responsável</string>
+    <string name="estado_hint">* Informe o estado</string>
+    <string name="cidade_hint">* Informe a cidade</string>
+    <string name="endereco_hint">* Informe o endereço</string>
+    <string name="numero_hint">Número</string>
+    <string name="bairro_hint">* Informe o bairro</string>
+    <string name="comp_hint">Informe o complemento</string>
+    <string name="telefone_hint">* Informe o telefone</string>
+    <string name="telefone_opcional_hint">Informe outro telefone (opcional)</string>
+    <string name="email_hint">Informe o e-mail</string>
+    <string name="site_hint">Informe o website</string>
+    <string name="campos">(*) Campos obrigatórios de digitação</string>
+    <string name="termo">
+        Para que sua empresa apareça na lista principal do Guiacom e tenha
+        tamanho diferenciado no perfil é necessário ser Anunciante Premium.
+        Marcando a opção abaixo você receberá nossos planos para apreciação
+        e contratação do serviço.
+    </string>
+    <string name="check">QUERO SER ANUNCIANTE PREMIUM</string>
+    <string name="pendente">Pendente</string>
+    <string name="radio_gratis">Grátis</string>
+    <string name="radio_1">P 1</string>
+    <string name="radio_2">P 2</string>
+    <string name="radio_3">P 3</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="err_msg_seg">Insira o segmento</string>
+    <string name="err_msg_name">Insira o nome da empresa</string>
+    <string name="err_msg_descricao">Insira a descrição</string>
+    <string name="err_msg_responsavel">Insira o nome do responsável</string>
+    <string name="err_msg_estado">Insira o estado</string>
+    <string name="err_msg_cidade">Insira a cidade</string>
+    <string name="err_msg_endereco">Insira o endereço</string>
+    <string name="err_msg_num">Insira o número</string>
+    <string name="err_msg_bairro">Insira o bairro</string>
+    <string name="err_msg_tel1">Insira o telefone</string>
+    <string name="err_msg_email">E-mail inválido</string>
+    <string name="err_msg_site">Site inválido</string>
+
+    <!-- Catálogo -->
+    <string name="catalogo">O Guiacom</string>
+    <string name="info">
+        \tSeguindo a tendência mundial da tecnologia, o Guiacom vem trazer para Manhuaçu
+        e região um inovador GUIA COMERCIAL DIGITAL contendo as principais empresas regionais
+        visando aproximar consumidores de produtos e serviços. Para isso, oferecemos um serviço
+        de excelência para investimentos de publicidade que busca impulsionar suas vendas e conquistar novos clientes.
+    </string>
+    <string name="info1">
+        \tNo Guiacom você encontra os principais meios de contatos das empresas com um acesso prático, rápido e muito fácil.
+    </string>
+    <string name="info2">
+        \tAqui, sua empresa tem divulgação 24 horas por dia durante todo o ano com ótimo índice de visitação, possibilitando
+        um excelente custo/benefício.
+    </string>
+    <string name="info3">
+        \tInvista onde sua empresa será encontrada!
+    </string>
+    <string name="title_activity_empresas">EmpresasActivity</string>
+    <string name="title_activity_catalogo">CatalogoActivity</string>
+    <string name="title_activity_detalhes">DetalhesActivity</string>
+
+    <!-- Detalhes -->
+    <string name="nome">NOME EMPRESA</string>
+    <string name="nome_title">EMPRESA</string>
+    <string name="presentation">Apresentação e descrição da empresa</string>
+    <string name="telefone">33 0000 0000</string>
+    <string name="endereco">Avenida alguma, 00</string>
+    <string name="endereco_title">ENDEREÇO</string>
+    <string name="bairro">Bairro</string>
+    <string name="bairro_title">BAIRRO</string>
+    <string name="cidade">Cidade</string>
+    <string name="cidade_title">CIDADE</string>
+    <string name="estado">Estado</string>
+    <string name="estado_title">UF</string>
+    <string name="site">www.site.com.br</string>
+    <string name="email">email@email.com</string>
+    <string name="title_activity_login_admin">LoginAdminActivity</string>
+    <string name="nao_informado">Não informado</string>
+    <string name="dialog_fone_title">Atenção</string>
+    <string name="dialog_fone_message">Deseja fazer a ligação?</string>
+    <string name="dialog_email_title">Atenção</string>
+    <string name="dialog_site_message">Deseja abrir este site?</string>
+    <string name="dialog_site_title">Atenção</string>
+
+    <!-- Login Admin -->
+    <string name="email_admin_hint">Seu e-mail</string>
+    <string name="senha_admin_hint">Sua senha</string>
+    <string name="btn_login_admin">Login</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="txt_login">Login Área Administrativa</string>
+    <string name="login_info">Este é acesso é destinado apenas ao Administrador do Sistema Guiacom</string>
+
+    <!-- Menu Admin -->
+    <string name="menu_sair">Sair</string>
+    <string name="menu_pendentes">Cadastros pendentes (Grátis)</string>
+    <string name="menu_pendentes_premium">Cadastros pendentes (Premium)</string>
+    <string name="menu_empresas">Empresas cadastradas</string>
+    <string name="menu_estatisticas">Estatísticas</string>
+    <string name="menu_cadastrar">Cadastrar empresa</string>
+    <string name="menu_message">Bem-vindo Administrador</string>
+    <string name="dialog_message">Tem certeza que deseja sair?</string>
+    <string name="dialog_title">Atenção</string>
+    <string name="dialog_ok">Sim</string>
+    <string name="dialog_no">Não</string>
+
+    <!-- Auto completes -->
+    <string-array name="estados_array">
+        <item>Minas Gerais</item>
+        <item>Espírito Santo</item>
+        <item>São Paulo</item>
+        <item>Rio de Janeiro</item>
+        <item>Acre</item>
+        <item>Distrito Federal</item>
+        <item>Rio Grande do Sul</item>
+        <item>Santa Catarina</item>
+        <item>Alagoas</item>
+        <item>Amapá</item>
+        <item>Amazonas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Goiás</item>
+        <item>Maranhão</item>
+        <item>Mato Grosso</item>
+        <item>Mato Grosso do Sul</item>
+        <item>Pará</item>
+        <item>Paraíba</item>
+        <item>Paraná</item>
+        <item>Pernambuco</item>
+        <item>Piauí</item>
+        <item>Rio Grande do Norte</item>
+        <item>Rondônia</item>
+        <item>Roraima</item>
+        <item>Sergipe</item>
+        <item>Tocantins</item>
+    </string-array>
+    <string name="title_activity_cadastro_admin">CadastroAdminActivity</string>
+    <string name="title_activity_lista_pendentes">ListaPendentesActivity</string>
+
+    <!-- Lista pendentes -->
+    <string name="pendentes">Empresas Pendentes</string>
+    <string name="wants_premium">Desejam cadastro premium</string>
+    <string name="no_premium">Cadastros grátis</string>
+    <string name="title_activity_editar">EditarActivity</string>
+
+    <!-- List Context Menu -->
+    <string name="menu_delete">Excluir</string>
+
+    <!-- Editar -->
+    <string name="editar">Editar dados da empresa</string>
+
+    <!-- Excluir -->
+    <string name="excluir_title">Atenção</string>
+    <string name="excluir_ok">Sim</string>
+    <string name="excluir_no">Não</string>
+    <string name="title_activity_lista_empesas_admin">ListaEmpesasAdminActivity</string>
+
+    <!-- Lista Empresas Admin -->
+    <string name="empresas">Empresas Cadastradas</string>
+    <string name="title_activity_contato">ContatoActivity</string>
+
+    <!-- Contato -->
+    <string name="contato">CONTATO</string>
+    <string name="contato_email">guiacomdigital@gmail.com</string>
+    <string name="contato_info">Para maiores informações entre em contato com o Guiacom pelo link abaixo:</string>
+    <string name="title_activity_estatisticas">EstatisticasActivity</string>
+
+    <!-- Estatísticas -->
+    <string name="estatisticas">Estatísticas</string>
+    <string name="est_qtd">0</string>
+    <string name="est_porcento">0%</string>
+    <string name="est_gratis">Grátis</string>
+    <string name="est_premium1">Premium 1</string>
+    <string name="est_premium2">Premium 2</string>
+    <string name="est_premium3">Premium 3</string>
+    <string name="est_pendentes">Pendentes</string>
+    <string name="est_pendentesPremium">Pendentes Premium</string>
+    <string name="est_total">Total</string>
+
+</resources>
