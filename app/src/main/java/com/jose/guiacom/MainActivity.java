@@ -1777,6 +1777,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                             } else {
                                                 Intent intent = new Intent(MainActivity.this, SearchActivity.class);
                                                 intent.putExtra("cidade", txtCidade.getText().toString());
+                                                intent.putExtra("direto", 1);
                                                 startActivity(intent);
 
                                                 spnMargin(0, 35, 0, 0);
@@ -3321,6 +3322,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                         } else {
                                                             Intent intent = new Intent(MainActivity.this, SearchActivity.class);
                                                             intent.putExtra("cidade", txtCidade.getText().toString());
+                                                            intent.putExtra("direto", 1);
                                                             startActivity(intent);
 
                                                             spnMargin(0, 35, 0, 0);
@@ -4930,6 +4932,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                         } else {
                                                             Intent intent = new Intent(MainActivity.this, SearchActivity.class);
                                                             intent.putExtra("cidade", txtCidade.getText().toString());
+                                                            intent.putExtra("direto", 1);
                                                             startActivity(intent);
 
                                                             spnMargin(0, 35, 0, 0);

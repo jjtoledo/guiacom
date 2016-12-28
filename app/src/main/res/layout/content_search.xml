@@ -54,10 +54,34 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgCity"
+        android:visibility="gone"
+        android:layout_marginStart="40sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginBottom="10sp"
+        android:src="@drawable/buscar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtHistoria"
+        android:id="@+id/txtHistoria"
+        android:visibility="gone"
+        android:layout_marginTop="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40sp"
+        android:layout_marginEnd="40sp"
+        android:textSize="13sp" />
+
     <View
         android:id="@+id/Divisor1"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
+        android:layout_below="@+id/imgCity"
         android:background="#A3A3A3"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"/>

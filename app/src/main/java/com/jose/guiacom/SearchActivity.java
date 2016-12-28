@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,6 +12,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.util.TypedValue;
 import android.view.ContextMenu;
 import android.view.Display;
 import android.view.Menu;
@@ -36,21 +39,27 @@ import com.amigold.fundapter.extractors.StringExtractor;
 import com.kosalgeek.android.json.JsonConverter;
 import com.kosalgeek.genasync12.AsyncResponse;
 import com.kosalgeek.genasync12.PostResponseAsyncTask;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class SearchActivity extends AppCompatActivity implements Urls {
 
     TextView txtCidade;
     ArrayList<Empresa> empresas;
     ArrayList<Cidade> cidades;
+    ArrayList<Foto> fotos;
     ArrayList items = new ArrayList();
     ArrayAdapter<String> cidadesNome;
     //EntryAdapter empresasAdapter;
     FunDapter<Empresa> empresasAdapter;
     ListView lvEmpresas;
     String id = "", cidade, cidadeSigla;
+    int direto;
+    ImageView imgCity;
+    TextView txtHistoria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +75,11 @@ public class SearchActivity extends AppCompatActivity implements Urls {
         ab.setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp);
         ab.setDisplayShowCustomEnabled(true); // enable overriding the default toolbar layout
         ab.setDisplayShowTitleEnabled(false); // disable the default title element here (for centered title)
+
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        final int width = size.x;
 
         lvEmpresas = (ListView) findViewById(R.id.lvEmpresas);
 
@@ -131,13 +145,14 @@ public class SearchActivity extends AppCompatActivity implements Urls {
         cidadeSigla = getIntent().getStringExtra("cidade");
         cidade = cidadeSigla.substring(0, cidadeSigla.indexOf(" -"));
 
+
+        direto = getIntent().getIntExtra("direto", 0);
+
         txtCidade = (TextView) findViewById(R.id.txtCidade);
         txtCidade.setText(cidadeSigla);
 
-        Display display = getWindowManager().getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
-        final int width = size.x;
+        txtHistoria = (TextView) findViewById(R.id.txtHistoria);
+        imgCity = (ImageView) findViewById(R.id.imgCity);
 
         final EditText txtSearch = (EditText) findViewById(R.id.txtSearch);
         ViewGroup.LayoutParams params = txtSearch.getLayoutParams();
@@ -172,6 +187,7 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                             Toast.makeText(SearchActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
                         } else {
                             id = s;
+
                             HashMap<String, String> postData = new HashMap<>();
                             postData.put("id_cidade", id);
                             postData.put("empresa", txtSearch.getText().toString());
@@ -269,6 +285,54 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                     if (!s.equals("nenhum")) {
                         //System.out.println(s);
                         id = s;
+
+                        if (direto == 1) {
+                            final HashMap<String, String> postCidade = new HashMap<>();
+                            postCidade.put("cidade_id", id);
+                            postCidade.put("android", "android");
+
+                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
+                                @Override
+                                public void processFinish(String s) {
+                                    if (!s.equals("null")) {
+                                        imgCity.setVisibility(View.VISIBLE);
+                                        txtHistoria.setVisibility(View.VISIBLE);
+
+                                        fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
+
+                                        int d = width(width, 4);
+                                        Picasso.with(SearchActivity.this)
+                                                .load(img + fotos.get(0).foto)
+                                                .transform(new CircleTransform())
+                                                .centerCrop()
+                                                .resize(d, d)
+                                                .into(imgCity);
+
+                                        imgCity.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+                                                Intent intent = new Intent(SearchActivity.this, DetalhesCidadeActivity.class);
+                                                intent.putExtra("cidade", txtCidade.getText().toString());
+                                                intent.putExtra("fotos", fotos);
+                                                startActivity(intent);
+                                            }
+                                        });
+
+                                        txtHistoria.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+                                                Intent intent = new Intent(SearchActivity.this, DetalhesCidadeActivity.class);
+                                                intent.putExtra("cidade", txtCidade.getText().toString());
+                                                intent.putExtra("fotos", fotos);
+                                                startActivity(intent);
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+                            getFotos.execute(getFotosUrl);
+                        }
+
                         HashMap<String, String> postId = new HashMap<>();
                         postId.put("id", id);
                         postId.put("android", "android");
@@ -650,4 +714,33 @@ public class SearchActivity extends AppCompatActivity implements Urls {
         }
         return "-1";
     }
+
+    public int width(int width, int tipo){
+        Double result;
+        switch (tipo){
+            case 1:
+                result = (width-(width*converte(width, 32))-(width*converte(width, 10)))*0.3333;
+                return result.intValue()+1;
+            case 2:
+                result = (width-(width*converte(width, 32)))*0.6667;
+                return result.intValue();
+            case 3:
+                result = width-(width*converte(width, 32));
+                return result.intValue()+1;
+            case 4:
+                result = (width-(width*converte(width, 32))-(width*converte(width, 10)))*0.20;
+                return result.intValue()+1;
+        }
+        return 0;
+    }
+
+    public float dpToPx(int dp) {
+        Resources r = getResources();
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics());
+    }
+
+    public double converte(int width, int dp) {
+        return dpToPx(dp)/width;
+    }
+
 }

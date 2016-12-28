@@ -72,7 +72,6 @@
             android:textSize="13sp"
             android:layout_below="@+id/Divisor" />
 
-
         <View
             android:id="@+id/Divisor1"
             android:layout_width="fill_parent"
