@@ -3,7 +3,7 @@ package com.jose.guiacom;
 
 public interface Urls {
     String url = "http://guiacomdigital.com.br/webservice/";
-    String img = "http://guiacomdigital.com.br/app/webroot/img/";
+    String img = "http://guiacomdigital.com.br/site/img/";
     String cadastroEmpresaUrl = url + "cadastroEmpresa.php";
     String deleteEmpresaUrl = url + "deleteEmpresa.php";
     String getCidadeUrl = url + "getCidade.php";

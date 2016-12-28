@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
     ArrayList<String> cidadesNome = new ArrayList<>();
     ArrayList<Cidade> cidades;
     ArrayList<Empresa> empresas, premium1, premium2, premium3;
+    ArrayList<Foto> fotos;
     String cidadeSigla, cidade;
     Spinner spinner;
     TextView txtCidade, txtAnunciantes, txtNenhum, txtCities, txtHistoria;
@@ -287,6 +288,52 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                         public void processFinish(String s) {
                                             //System.out.println(s);
                                             if (!s.equals("nenhum")) {
+                                                final HashMap<String, String> postCidade = new HashMap<>();
+                                                postCidade.put("cidade_id", cidade_id);
+                                                postCidade.put("android", "android");
+
+                                                PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                                    @Override
+                                                    public void processFinish(String s) {
+                                                        txtCities.setVisibility(View.GONE);
+                                                        spnMargin(0, 0, 0, 0);
+                                                        imgCity.setVisibility(View.VISIBLE);
+                                                        txtHistoria.setVisibility(View.VISIBLE);
+                                                        div.setVisibility(View.VISIBLE);
+
+                                                        fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
+
+                                                        int d = width(width, 4);
+                                                        Picasso.with(MainActivity.this)
+                                                                .load(img + fotos.get(0).foto)
+                                                                .transform(new CircleTransform())
+                                                                .centerCrop()
+                                                                .resize(d, d)
+                                                                .into(imgCity);
+
+                                                        imgCity.setOnClickListener(new View.OnClickListener() {
+                                                            @Override
+                                                            public void onClick(View v) {
+                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                intent.putExtra("fotos", fotos);
+                                                                startActivity(intent);
+                                                            }
+                                                        });
+
+                                                        txtHistoria.setOnClickListener(new View.OnClickListener() {
+                                                            @Override
+                                                            public void onClick(View v) {
+                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                intent.putExtra("fotos", fotos);
+                                                                startActivity(intent);
+                                                            }
+                                                        });
+                                                    }
+                                                });
+                                                getFotos.execute(getFotosUrl);
+
                                                 txtNenhum.setText("");
                                                 empresas = new JsonConverter<Empresa>().toArrayList(s, Empresa.class);
                                                 Collections.shuffle(empresas);
@@ -1727,22 +1774,6 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                         startActivity(intent);
                                                     }
                                                 });
-
-                                                final HashMap<String, String> postCidade = new HashMap<>();
-                                                postCidade.put("cidade_id", cidade_id);
-                                                postCidade.put("android", "android");
-
-                                                PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                    @Override
-                                                    public void processFinish(String s) {
-                                                        txtCities.setVisibility(View.GONE);
-                                                        spnMargin(0, 0, 0, 0);
-                                                        imgCity.setVisibility(View.VISIBLE);
-                                                        txtHistoria.setVisibility(View.VISIBLE);
-                                                        div.setVisibility(View.VISIBLE);
-                                                    }
-                                                });
-                                                getFotos.execute(getFotosUrl);
                                             } else {
                                                 Intent intent = new Intent(MainActivity.this, SearchActivity.class);
                                                 intent.putExtra("cidade", txtCidade.getText().toString());
@@ -1793,6 +1824,52 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                     public void processFinish(String s) {
                                                         //System.out.println(s);
                                                         if (!s.equals("nenhum")) {
+                                                            final HashMap<String, String> postCidade = new HashMap<>();
+                                                            postCidade.put("cidade_id", cidade_id);
+                                                            postCidade.put("android", "android");
+
+                                                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                                                @Override
+                                                                public void processFinish(String s) {
+                                                                    txtCities.setVisibility(View.GONE);
+                                                                    spnMargin(0, 0, 0, 0);
+                                                                    imgCity.setVisibility(View.VISIBLE);
+                                                                    txtHistoria.setVisibility(View.VISIBLE);
+                                                                    div.setVisibility(View.VISIBLE);
+
+                                                                    fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
+
+                                                                    int d = width(width, 4);
+                                                                    Picasso.with(MainActivity.this)
+                                                                            .load(img + fotos.get(0).foto)
+                                                                            .transform(new CircleTransform())
+                                                                            .centerCrop()
+                                                                            .resize(d, d)
+                                                                            .into(imgCity);
+
+                                                                    imgCity.setOnClickListener(new View.OnClickListener() {
+                                                                        @Override
+                                                                        public void onClick(View v) {
+                                                                            Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                            intent.putExtra("fotos", fotos);
+                                                                            startActivity(intent);
+                                                                        }
+                                                                    });
+
+                                                                    txtHistoria.setOnClickListener(new View.OnClickListener() {
+                                                                        @Override
+                                                                        public void onClick(View v) {
+                                                                            Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                            intent.putExtra("fotos", fotos);
+                                                                            startActivity(intent);
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                            getFotos.execute(getFotosUrl);
+
                                                             txtNenhum.setText("");
                                                             empresas = new JsonConverter<Empresa>().toArrayList(s, Empresa.class);
                                                             Collections.shuffle(empresas);
@@ -3241,22 +3318,6 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                                     startActivity(intent);
                                                                 }
                                                             });
-
-                                                            final HashMap<String, String> postCidade = new HashMap<>();
-                                                            postCidade.put("cidade_id", cidade_id);
-                                                            postCidade.put("android", "android");
-
-                                                            PostResponseAsyncTask getDetalhes = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                                @Override
-                                                                public void processFinish(String s) {
-                                                                    txtCities.setVisibility(View.GONE);
-                                                                    spnMargin(0, 0, 0, 0);
-                                                                    imgCity.setVisibility(View.VISIBLE);
-                                                                    txtHistoria.setVisibility(View.VISIBLE);
-                                                                    div.setVisibility(View.VISIBLE);
-                                                                }
-                                                            });
-                                                            getDetalhes.execute(getDetalhesUrl);
                                                         } else {
                                                             Intent intent = new Intent(MainActivity.this, SearchActivity.class);
                                                             intent.putExtra("cidade", txtCidade.getText().toString());
@@ -3361,6 +3422,52 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                     public void processFinish(String s) {
                                                         //System.out.println(s);
                                                         if (!s.equals("nenhum")) {
+                                                            final HashMap<String, String> postCidade = new HashMap<>();
+                                                            postCidade.put("cidade_id", cidade_id);
+                                                            postCidade.put("android", "android");
+
+                                                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                                                @Override
+                                                                public void processFinish(String s) {
+                                                                    txtCities.setVisibility(View.GONE);
+                                                                    spnMargin(0, 0, 0, 0);
+                                                                    imgCity.setVisibility(View.VISIBLE);
+                                                                    txtHistoria.setVisibility(View.VISIBLE);
+                                                                    div.setVisibility(View.VISIBLE);
+
+                                                                    fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
+
+                                                                    int d = width(width, 4);
+                                                                    Picasso.with(MainActivity.this)
+                                                                            .load(img + fotos.get(0).foto)
+                                                                            .transform(new CircleTransform())
+                                                                            .centerCrop()
+                                                                            .resize(d, d)
+                                                                            .into(imgCity);
+
+                                                                    imgCity.setOnClickListener(new View.OnClickListener() {
+                                                                        @Override
+                                                                        public void onClick(View v) {
+                                                                            Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                            intent.putExtra("fotos", fotos);
+                                                                            startActivity(intent);
+                                                                        }
+                                                                    });
+
+                                                                    txtHistoria.setOnClickListener(new View.OnClickListener() {
+                                                                        @Override
+                                                                        public void onClick(View v) {
+                                                                            Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                            intent.putExtra("fotos", fotos);
+                                                                            startActivity(intent);
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                            getFotos.execute(getFotosUrl);
+
                                                             txtNenhum.setText("");
                                                             empresas = new JsonConverter<Empresa>().toArrayList(s, Empresa.class);
                                                             Collections.shuffle(empresas);
@@ -4820,22 +4927,6 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                                     startActivity(intent);
                                                                 }
                                                             });
-
-                                                            final HashMap<String, String> postCidade = new HashMap<>();
-                                                            postCidade.put("cidade_id", cidade_id);
-                                                            postCidade.put("android", "android");
-
-                                                            PostResponseAsyncTask getDetalhes = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                                @Override
-                                                                public void processFinish(String s) {
-                                                                    txtCities.setVisibility(View.GONE);
-                                                                    spnMargin(0, 0, 0, 0);
-                                                                    imgCity.setVisibility(View.VISIBLE);
-                                                                    txtHistoria.setVisibility(View.VISIBLE);
-                                                                    div.setVisibility(View.VISIBLE);
-                                                                }
-                                                            });
-                                                            getDetalhes.execute(getDetalhesUrl);
                                                         } else {
                                                             Intent intent = new Intent(MainActivity.this, SearchActivity.class);
                                                             intent.putExtra("cidade", txtCidade.getText().toString());
@@ -5016,6 +5107,9 @@ public class MainActivity extends AppCompatActivity implements Urls {
                 return result.intValue();
             case 3:
                 result = width-(width*converte(width, 32));
+                return result.intValue()+1;
+            case 4:
+                result = (width-(width*converte(width, 32))-(width*converte(width, 10)))*0.20;
                 return result.intValue()+1;
         }
         return 0;

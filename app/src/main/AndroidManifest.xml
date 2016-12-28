@@ -142,6 +142,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.jose.guiacom.AdminActivity" />
         </activity>
+        <activity
+            android:name=".DetalhesCidadeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FotoActivity" />
     </application>
 
 </manifest>

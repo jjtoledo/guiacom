@@ -7,4 +7,5 @@
     <color name="toolbar">#ddd</color>
     <color name="primary_text_dark">#222</color>
     <color name="background">#FFFAFAFA</color>
+    <color name="gray">#aaa</color>
 </resources>

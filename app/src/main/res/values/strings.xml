@@ -21,6 +21,10 @@
     <string name="txtInfo">Pesquisando empresas em:</string>
     <string name="txtSearch">Insira o nome da empresa</string>
 
+    <!-- Detalhes Cidade -->
+    <string name="txtSobre">Sobre: </string>
+    <string name="txtApoio">Apoio Cultural: </string>
+
     <!-- Segmentos -->
     <string name="title_activity_segment">Segmentos</string>
     <string name="txtInfoSeg">Pesquisando segmentos em:</string>
