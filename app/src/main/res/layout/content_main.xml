@@ -64,7 +64,7 @@
             android:text="@string/txtHistoria"
             android:id="@+id/txtHistoria"
             android:visibility="gone"
-            android:layout_marginTop="26sp"
+            android:layout_marginTop="30sp"
             android:layout_toRightOf="@+id/imgCity"
             android:layout_toEndOf="@+id/imgCity"
             android:layout_marginLeft="10sp"

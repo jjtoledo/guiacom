@@ -57,7 +57,6 @@ public class SearchActivity extends AppCompatActivity implements Urls {
     FunDapter<Empresa> empresasAdapter;
     ListView lvEmpresas;
     String id = "", cidade, cidadeSigla;
-    int direto;
     ImageView imgCity;
     TextView txtHistoria;
 
@@ -128,10 +127,45 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                             builder.setTitle(R.string.dialog_troca_cidade_title)
                                     .setAdapter(cidadesNome, new DialogInterface.OnClickListener() {
                                         @Override
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            Intent intent = new Intent(SearchActivity.this, MainActivity.class);
-                                            intent.putExtra("cidade", cidadesNome.getItem(which));
-                                            startActivity(intent);
+                                        public void onClick(DialogInterface dialog, final int which) {
+                                            final HashMap<String, String> postCidade = new HashMap<>();
+                                            postCidade.put("cidade", cidadesNome.getItem(which).substring(0, cidadesNome.getItem(which).indexOf(" -")));
+                                            postCidade.put("android", "android");
+                                            Log.i("cidade", cidadesNome.getItem(which));
+
+                                            PostResponseAsyncTask getCidade = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
+                                                @Override
+                                                public void processFinish(String s) {
+                                                    if (s == null || s.equals("")) {
+                                                        Toast.makeText(SearchActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
+                                                    } else {
+                                                        id = s;
+                                                        final HashMap<String, String> postCidade = new HashMap<>();
+                                                        postCidade.put("cidade_id", id);
+                                                        postCidade.put("android", "android");
+
+                                                        PostResponseAsyncTask check = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
+                                                            @Override
+                                                            public void processFinish(String s) {
+                                                                Log.i("TEM", s);
+                                                                if (s == null || s.equals("")) {
+                                                                    Toast.makeText(SearchActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
+                                                                } else if (s.equals("s")) {
+                                                                    Intent intent = new Intent(SearchActivity.this, MainActivity.class);
+                                                                    intent.putExtra("cidade", cidadesNome.getItem(which));
+                                                                    startActivity(intent);
+                                                                } else {
+                                                                    Intent intent = new Intent(SearchActivity.this, SearchActivity.class);
+                                                                    intent.putExtra("cidade", cidadesNome.getItem(which));
+                                                                    startActivity(intent);
+                                                                }
+                                                            }
+                                                        });
+                                                        check.execute(checkCidadePossuiEmpresaPremiumUrl);
+                                                    }
+                                                }
+                                            });
+                                            getCidade.execute(getCidadeUrl);
                                         }
                                     });
                             builder.show();
@@ -144,9 +178,6 @@ public class SearchActivity extends AppCompatActivity implements Urls {
 
         cidadeSigla = getIntent().getStringExtra("cidade");
         cidade = cidadeSigla.substring(0, cidadeSigla.indexOf(" -"));
-
-
-        direto = getIntent().getIntExtra("direto", 0);
 
         txtCidade = (TextView) findViewById(R.id.txtCidade);
         txtCidade.setText(cidadeSigla);
@@ -275,7 +306,7 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                 getCidade.execute(getCidadeUrl);
             }
         });
-;
+
         PostResponseAsyncTask getCidade = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
             @Override
             public void processFinish(String s) {
@@ -286,52 +317,77 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                         //System.out.println(s);
                         id = s;
 
-                        if (direto == 1) {
-                            final HashMap<String, String> postCidade = new HashMap<>();
-                            postCidade.put("cidade_id", id);
-                            postCidade.put("android", "android");
+                        final HashMap<String, String> postCidade = new HashMap<>();
+                        postCidade.put("cidade_id", id);
+                        postCidade.put("android", "android");
 
-                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
-                                @Override
-                                public void processFinish(String s) {
-                                    if (!s.equals("null")) {
-                                        imgCity.setVisibility(View.VISIBLE);
-                                        txtHistoria.setVisibility(View.VISIBLE);
+                        PostResponseAsyncTask check = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
+                            @Override
+                            public void processFinish(String s) {
+                                Log.i("TEM", s);
+                                if (s == null || s.equals("")) {
+                                    Toast.makeText(SearchActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
+                                } else if (s.equals("n")) {
+                                    PostResponseAsyncTask getFotos = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
+                                        @Override
+                                        public void processFinish(String s) {
+                                            if (!s.equals("null")) {
+                                                imgCity.setVisibility(View.VISIBLE);
+                                                txtHistoria.setVisibility(View.VISIBLE);
 
-                                        fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
+                                                fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
 
-                                        int d = width(width, 4);
-                                        Picasso.with(SearchActivity.this)
-                                                .load(img + fotos.get(0).foto)
-                                                .transform(new CircleTransform())
-                                                .centerCrop()
-                                                .resize(d, d)
-                                                .into(imgCity);
+                                                int d = width(width, 4);
+                                                Picasso.with(SearchActivity.this)
+                                                        .load(img + fotos.get(0).foto)
+                                                        .transform(new CircleTransform())
+                                                        .centerCrop()
+                                                        .placeholder(R.drawable.perfil1)
+                                                        .resize(d, d)
+                                                        .into(imgCity);
 
-                                        imgCity.setOnClickListener(new View.OnClickListener() {
-                                            @Override
-                                            public void onClick(View v) {
-                                                Intent intent = new Intent(SearchActivity.this, DetalhesCidadeActivity.class);
-                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                intent.putExtra("fotos", fotos);
-                                                startActivity(intent);
+                                                imgCity.setOnClickListener(new View.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(View v) {
+                                                        Intent intent = new Intent(SearchActivity.this, DetalhesCidadeActivity.class);
+                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+                                                        intent.putExtra("fotos", fotos);
+                                                        startActivity(intent);
+                                                    }
+                                                });
+
+                                                txtHistoria.setOnClickListener(new View.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(View v) {
+                                                        Intent intent = new Intent(SearchActivity.this, DetalhesCidadeActivity.class);
+                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+                                                        intent.putExtra("fotos", fotos);
+                                                        startActivity(intent);
+                                                    }
+                                                });
                                             }
-                                        });
-
-                                        txtHistoria.setOnClickListener(new View.OnClickListener() {
-                                            @Override
-                                            public void onClick(View v) {
-                                                Intent intent = new Intent(SearchActivity.this, DetalhesCidadeActivity.class);
-                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                intent.putExtra("fotos", fotos);
-                                                startActivity(intent);
-                                            }
-                                        });
-                                    }
+                                        }
+                                    });
+                                    getFotos.execute(getFotosUrl);
                                 }
-                            });
-                            getFotos.execute(getFotosUrl);
-                        }
+                            }
+                        });
+                        check.execute(checkCidadePossuiEmpresaPremiumUrl);
+                    }
+                }
+            }
+        });
+        getCidade.execute(getCidadeUrl);
+
+        getCidade = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
+            @Override
+            public void processFinish(String s) {
+                if (s == null || s.equals("")) {
+                    Toast.makeText(SearchActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
+                } else {
+                    if (!s.equals("nenhum")) {
+                        //System.out.println(s);
+                        id = s;
 
                         HashMap<String, String> postId = new HashMap<>();
                         postId.put("id", id);

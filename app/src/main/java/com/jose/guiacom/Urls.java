@@ -8,6 +8,7 @@ public interface Urls {
     String deleteEmpresaUrl = url + "deleteEmpresa.php";
     String getCidadeUrl = url + "getCidade.php";
     String getCidadeNomeUrl = url + "getCidadeNome.php";
+    String checkCidadePossuiEmpresaPremiumUrl = url + "checkCidadePossuiEmpresaPremium.php";
     String getEstadoUrl = url + "getEstado.php";
     String getDetalhesUrl = url + "getDetalhes.php";
     String getFotosUrl = url + "getFotos.php";

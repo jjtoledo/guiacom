@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
             1,3,2,1,1,3,1,1,1,1,
             1,2};
 
-    final int TAMANHO = 102;
+    final int TAMANHO = 50;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,58 +145,58 @@ public class MainActivity extends AppCompatActivity implements Urls {
         ivArray[47] = (ImageView) findViewById(R.id.imageView48);
         ivArray[48] = (ImageView) findViewById(R.id.imageView49);
         ivArray[49] = (ImageView) findViewById(R.id.imageView50);
-        ivArray[50] = (ImageView) findViewById(R.id.imageView51);
-        ivArray[51] = (ImageView) findViewById(R.id.imageView52);
-        ivArray[52] = (ImageView) findViewById(R.id.imageView53);
-        ivArray[53] = (ImageView) findViewById(R.id.imageView54);
-        ivArray[54] = (ImageView) findViewById(R.id.imageView55);
-        ivArray[55] = (ImageView) findViewById(R.id.imageView56);
-        ivArray[56] = (ImageView) findViewById(R.id.imageView57);
-        ivArray[57] = (ImageView) findViewById(R.id.imageView58);
-        ivArray[58] = (ImageView) findViewById(R.id.imageView59);
-        ivArray[59] = (ImageView) findViewById(R.id.imageView60);
-        ivArray[60] = (ImageView) findViewById(R.id.imageView61);
-        ivArray[61] = (ImageView) findViewById(R.id.imageView62);
-        ivArray[62] = (ImageView) findViewById(R.id.imageView63);
-        ivArray[63] = (ImageView) findViewById(R.id.imageView64);
-        ivArray[64] = (ImageView) findViewById(R.id.imageView65);
-        ivArray[65] = (ImageView) findViewById(R.id.imageView66);
-        ivArray[66] = (ImageView) findViewById(R.id.imageView67);
-        ivArray[67] = (ImageView) findViewById(R.id.imageView68);
-        ivArray[68] = (ImageView) findViewById(R.id.imageView69);
-        ivArray[69] = (ImageView) findViewById(R.id.imageView70);
-        ivArray[70] = (ImageView) findViewById(R.id.imageView71);
-        ivArray[71] = (ImageView) findViewById(R.id.imageView72);
-        ivArray[72] = (ImageView) findViewById(R.id.imageView73);
-        ivArray[73] = (ImageView) findViewById(R.id.imageView74);
-        ivArray[74] = (ImageView) findViewById(R.id.imageView75);
-        ivArray[75] = (ImageView) findViewById(R.id.imageView76);
-        ivArray[76] = (ImageView) findViewById(R.id.imageView77);
-        ivArray[77] = (ImageView) findViewById(R.id.imageView78);
-        ivArray[78] = (ImageView) findViewById(R.id.imageView79);
-        ivArray[79] = (ImageView) findViewById(R.id.imageView80);
-        ivArray[80] = (ImageView) findViewById(R.id.imageView81);
-        ivArray[81] = (ImageView) findViewById(R.id.imageView82);
-        ivArray[82] = (ImageView) findViewById(R.id.imageView83);
-        ivArray[83] = (ImageView) findViewById(R.id.imageView84);
-        ivArray[84] = (ImageView) findViewById(R.id.imageView85);
-        ivArray[85] = (ImageView) findViewById(R.id.imageView86);
-        ivArray[86] = (ImageView) findViewById(R.id.imageView87);
-        ivArray[87] = (ImageView) findViewById(R.id.imageView88);
-        ivArray[88] = (ImageView) findViewById(R.id.imageView89);
-        ivArray[89] = (ImageView) findViewById(R.id.imageView90);
-        ivArray[90] = (ImageView) findViewById(R.id.imageView91);
-        ivArray[91] = (ImageView) findViewById(R.id.imageView92);
-        ivArray[92] = (ImageView) findViewById(R.id.imageView93);
-        ivArray[93] = (ImageView) findViewById(R.id.imageView94);
-        ivArray[94] = (ImageView) findViewById(R.id.imageView95);
-        ivArray[95] = (ImageView) findViewById(R.id.imageView96);
-        ivArray[96] = (ImageView) findViewById(R.id.imageView97);
-        ivArray[97] = (ImageView) findViewById(R.id.imageView98);
-        ivArray[98] = (ImageView) findViewById(R.id.imageView99);
-        ivArray[99] = (ImageView) findViewById(R.id.imageView100);
-        ivArray[100] = (ImageView) findViewById(R.id.imageView101);
-        ivArray[101] = (ImageView) findViewById(R.id.imageView102);
+//        ivArray[50] = (ImageView) findViewById(R.id.imageView51);
+//        ivArray[51] = (ImageView) findViewById(R.id.imageView52);
+//        ivArray[52] = (ImageView) findViewById(R.id.imageView53);
+//        ivArray[53] = (ImageView) findViewById(R.id.imageView54);
+//        ivArray[54] = (ImageView) findViewById(R.id.imageView55);
+//        ivArray[55] = (ImageView) findViewById(R.id.imageView56);
+//        ivArray[56] = (ImageView) findViewById(R.id.imageView57);
+//        ivArray[57] = (ImageView) findViewById(R.id.imageView58);
+//        ivArray[58] = (ImageView) findViewById(R.id.imageView59);
+//        ivArray[59] = (ImageView) findViewById(R.id.imageView60);
+//        ivArray[60] = (ImageView) findViewById(R.id.imageView61);
+//        ivArray[61] = (ImageView) findViewById(R.id.imageView62);
+//        ivArray[62] = (ImageView) findViewById(R.id.imageView63);
+//        ivArray[63] = (ImageView) findViewById(R.id.imageView64);
+//        ivArray[64] = (ImageView) findViewById(R.id.imageView65);
+//        ivArray[65] = (ImageView) findViewById(R.id.imageView66);
+//        ivArray[66] = (ImageView) findViewById(R.id.imageView67);
+//        ivArray[67] = (ImageView) findViewById(R.id.imageView68);
+//        ivArray[68] = (ImageView) findViewById(R.id.imageView69);
+//        ivArray[69] = (ImageView) findViewById(R.id.imageView70);
+//        ivArray[70] = (ImageView) findViewById(R.id.imageView71);
+//        ivArray[71] = (ImageView) findViewById(R.id.imageView72);
+//        ivArray[72] = (ImageView) findViewById(R.id.imageView73);
+//        ivArray[73] = (ImageView) findViewById(R.id.imageView74);
+//        ivArray[74] = (ImageView) findViewById(R.id.imageView75);
+//        ivArray[75] = (ImageView) findViewById(R.id.imageView76);
+//        ivArray[76] = (ImageView) findViewById(R.id.imageView77);
+//        ivArray[77] = (ImageView) findViewById(R.id.imageView78);
+//        ivArray[78] = (ImageView) findViewById(R.id.imageView79);
+//        ivArray[79] = (ImageView) findViewById(R.id.imageView80);
+//        ivArray[80] = (ImageView) findViewById(R.id.imageView81);
+//        ivArray[81] = (ImageView) findViewById(R.id.imageView82);
+//        ivArray[82] = (ImageView) findViewById(R.id.imageView83);
+//        ivArray[83] = (ImageView) findViewById(R.id.imageView84);
+//        ivArray[84] = (ImageView) findViewById(R.id.imageView85);
+//        ivArray[85] = (ImageView) findViewById(R.id.imageView86);
+//        ivArray[86] = (ImageView) findViewById(R.id.imageView87);
+//        ivArray[87] = (ImageView) findViewById(R.id.imageView88);
+//        ivArray[88] = (ImageView) findViewById(R.id.imageView89);
+//        ivArray[89] = (ImageView) findViewById(R.id.imageView90);
+//        ivArray[90] = (ImageView) findViewById(R.id.imageView91);
+//        ivArray[91] = (ImageView) findViewById(R.id.imageView92);
+//        ivArray[92] = (ImageView) findViewById(R.id.imageView93);
+//        ivArray[93] = (ImageView) findViewById(R.id.imageView94);
+//        ivArray[94] = (ImageView) findViewById(R.id.imageView95);
+//        ivArray[95] = (ImageView) findViewById(R.id.imageView96);
+//        ivArray[96] = (ImageView) findViewById(R.id.imageView97);
+//        ivArray[97] = (ImageView) findViewById(R.id.imageView98);
+//        ivArray[98] = (ImageView) findViewById(R.id.imageView99);
+//        ivArray[99] = (ImageView) findViewById(R.id.imageView100);
+//        ivArray[100] = (ImageView) findViewById(R.id.imageView101);
+//        ivArray[101] = (ImageView) findViewById(R.id.imageView102);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -239,6 +239,96 @@ public class MainActivity extends AppCompatActivity implements Urls {
             params.height = height.intValue()+1;
 
             txtCidade.setText(cidadeSigla);
+
+            final HashMap<String, String> postCidade = new HashMap<>();
+            postCidade.put("cidade", cidade);
+            postCidade.put("android", "android");
+
+            PostResponseAsyncTask getCidade = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                @Override
+                public void processFinish(String s) {
+                    if (!s.equals("nenhum")) {
+                        //System.out.println(s);
+                        final String cidade_id = s;
+
+                        final HashMap<String, String> postCidade = new HashMap<>();
+                        postCidade.put("cidade_id", cidade_id);
+                        postCidade.put("android", "android");
+
+                        PostResponseAsyncTask check = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                            @Override
+                            public void processFinish(String s) {
+                                if (s == null || s.equals("")) {
+                                    Toast.makeText(MainActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
+                                } else if (s.equals("n")) {
+                                    for (int i = 0; i < TAMANHO; i++) {
+                                        ivArray[i].setImageResource(R.drawable.none);
+                                        ivArray[i].setClickable(false);
+                                    }
+
+                                    spnMargin(0, 35, 0, 0);
+                                    imgCity.setVisibility(View.GONE);
+                                    txtHistoria.setVisibility(View.GONE);
+                                    div.setVisibility(View.GONE);
+                                    txtCities.setVisibility(View.VISIBLE);
+                                    txtNenhum.setText(R.string.txtNenhum);
+
+                                    Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                                    intent.putExtra("cidade", txtCidade.getText().toString());
+                                    startActivity(intent);
+                                } else {
+                                    PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                        @Override
+                                        public void processFinish(String s) {
+                                            if (!s.equals("null")) {
+                                                txtCities.setVisibility(View.GONE);
+                                                spnMargin(0, 0, 0, 0);
+                                                imgCity.setVisibility(View.VISIBLE);
+                                                txtHistoria.setVisibility(View.VISIBLE);
+                                                div.setVisibility(View.VISIBLE);
+
+                                                fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
+
+                                                int d = width(width, 4);
+                                                Picasso.with(MainActivity.this)
+                                                        .load(img + fotos.get(0).foto)
+                                                        .transform(new CircleTransform())
+                                                        .centerCrop()
+                                                        .resize(d, d)
+                                                        .placeholder(R.drawable.perfil1)
+                                                        .into(imgCity);
+
+                                                imgCity.setOnClickListener(new View.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(View v) {
+                                                        Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+                                                        intent.putExtra("fotos", fotos);
+                                                        startActivity(intent);
+                                                    }
+                                                });
+
+                                                txtHistoria.setOnClickListener(new View.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(View v) {
+                                                        Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+                                                        intent.putExtra("fotos", fotos);
+                                                        startActivity(intent);
+                                                    }
+                                                });
+                                            }
+                                        }
+                                    });
+                                    getFotos.execute(getFotosUrl);
+                                }
+                            }
+                        });
+                        check.execute(checkCidadePossuiEmpresaPremiumUrl);
+                    }
+                }
+            });
+            getCidade.execute(getCidadeUrl);
 
             PostResponseAsyncTask readCidades = new PostResponseAsyncTask(MainActivity.this, postData, new AsyncResponse() {
                 @Override
@@ -288,51 +378,6 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                         public void processFinish(String s) {
                                             //System.out.println(s);
                                             if (!s.equals("nenhum")) {
-                                                final HashMap<String, String> postCidade = new HashMap<>();
-                                                postCidade.put("cidade_id", cidade_id);
-                                                postCidade.put("android", "android");
-
-                                                PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                    @Override
-                                                    public void processFinish(String s) {
-                                                        txtCities.setVisibility(View.GONE);
-                                                        spnMargin(0, 0, 0, 0);
-                                                        imgCity.setVisibility(View.VISIBLE);
-                                                        txtHistoria.setVisibility(View.VISIBLE);
-                                                        div.setVisibility(View.VISIBLE);
-
-                                                        fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
-
-                                                        int d = width(width, 4);
-                                                        Picasso.with(MainActivity.this)
-                                                                .load(img + fotos.get(0).foto)
-                                                                .transform(new CircleTransform())
-                                                                .centerCrop()
-                                                                .resize(d, d)
-                                                                .into(imgCity);
-
-                                                        imgCity.setOnClickListener(new View.OnClickListener() {
-                                                            @Override
-                                                            public void onClick(View v) {
-                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                intent.putExtra("fotos", fotos);
-                                                                startActivity(intent);
-                                                            }
-                                                        });
-
-                                                        txtHistoria.setOnClickListener(new View.OnClickListener() {
-                                                            @Override
-                                                            public void onClick(View v) {
-                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                intent.putExtra("fotos", fotos);
-                                                                startActivity(intent);
-                                                            }
-                                                        });
-                                                    }
-                                                });
-                                                getFotos.execute(getFotosUrl);
 
                                                 txtNenhum.setText("");
                                                 empresas = new JsonConverter<Empresa>().toArrayList(s, Empresa.class);
@@ -1082,714 +1127,698 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                     }
                                                 });
 
-                                                ivArray[50].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[50], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[51].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[51], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[52].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[52], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[53].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[53], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[54].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[54], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[55].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[55], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[56].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[56], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                if (premium3.size() > 0) {
-                                                    ivArray[57].setOnClickListener(new View.OnClickListener() {
-                                                        @Override
-                                                        public void onClick(View v) {
-                                                            Empresa e = getEmpresa(id[57], empresas);
-
-                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                            intent.putExtra("empresa", e);
-                                                            intent.putExtra("voltar", Main);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            startActivity(intent);
-                                                        }
-                                                    });
-                                                } else {
-                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[57].getLayoutParams();
-                                                    params.topMargin = 0;
-                                                }
-
-                                                ivArray[58].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[58], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[59].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[59], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[60].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[60], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[61].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[61], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[62].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[62], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[63].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[63], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                if (premium3.size() > 0) {
-                                                    ivArray[64].setOnClickListener(new View.OnClickListener() {
-                                                        @Override
-                                                        public void onClick(View v) {
-                                                            Empresa e = getEmpresa(id[64], empresas);
-
-                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                            intent.putExtra("empresa", e);
-                                                            intent.putExtra("voltar", Main);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            startActivity(intent);
-                                                        }
-                                                    });
-                                                } else {
-                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[64].getLayoutParams();
-                                                    params.topMargin = 0;
-                                                }
-
-                                                ivArray[65].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[65], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[66].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[66], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[67].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[67], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[68].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[68], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[69].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[69], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[70].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[70], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                if (premium3.size() > 0) {
-                                                    ivArray[71].setOnClickListener(new View.OnClickListener() {
-                                                        @Override
-                                                        public void onClick(View v) {
-                                                            Empresa e = getEmpresa(id[71], empresas);
-
-                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                            intent.putExtra("empresa", e);
-                                                            intent.putExtra("voltar", Main);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            startActivity(intent);
-                                                        }
-                                                    });
-                                                } else {
-                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[71].getLayoutParams();
-                                                    params.topMargin = 0;
-                                                }
-
-                                                ivArray[72].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[72], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[73].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[73], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[74].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[74], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[75].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[75], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[76].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[76], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[77].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[77], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[78].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[78], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[80].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[80], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                if (premium3.size() > 0) {
-                                                    ivArray[81].setOnClickListener(new View.OnClickListener() {
-                                                        @Override
-                                                        public void onClick(View v) {
-                                                            Empresa e = getEmpresa(id[81], empresas);
-
-                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                            intent.putExtra("empresa", e);
-                                                            intent.putExtra("voltar", Main);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            startActivity(intent);
-                                                        }
-                                                    });
-                                                } else {
-                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[81].getLayoutParams();
-                                                    params.topMargin = 0;
-                                                }
-
-                                                ivArray[82].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[82], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[83].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[83], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[84].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[84], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[85].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[85], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[86].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[86], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[87].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[87], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[88].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[88], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[89].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[89], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[90].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[90], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                if (premium3.size() > 0) {
-                                                    ivArray[91].setOnClickListener(new View.OnClickListener() {
-                                                        @Override
-                                                        public void onClick(View v) {
-                                                            Empresa e = getEmpresa(id[91], empresas);
-
-                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                            intent.putExtra("empresa", e);
-                                                            intent.putExtra("voltar", Main);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            startActivity(intent);
-                                                        }
-                                                    });
-                                                } else {
-                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[91].getLayoutParams();
-                                                    params.topMargin = 0;
-                                                }
-
-                                                ivArray[92].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[92], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[93].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[93], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[94].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[94], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                if (premium3.size() > 0) {
-                                                    ivArray[95].setOnClickListener(new View.OnClickListener() {
-                                                        @Override
-                                                        public void onClick(View v) {
-                                                            Empresa e = getEmpresa(id[95], empresas);
-
-                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                            intent.putExtra("empresa", e);
-                                                            intent.putExtra("voltar", Main);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            startActivity(intent);
-                                                        }
-                                                    });
-                                                } else {
-                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[95].getLayoutParams();
-                                                    params.topMargin = 0;
-                                                }
-
-                                                ivArray[96].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[96], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[97].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[97], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[98].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[98], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[99].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[99], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[100].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[100], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-
-                                                ivArray[101].setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Empresa e = getEmpresa(id[101], empresas);
-
-                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                        intent.putExtra("empresa", e);
-                                                        intent.putExtra("voltar", Main);
-                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                        startActivity(intent);
-                                                    }
-                                                });
-                                            } else {
-                                                Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                intent.putExtra("direto", 1);
-                                                startActivity(intent);
-
-                                                spnMargin(0, 35, 0, 0);
-                                                imgCity.setVisibility(View.GONE);
-                                                txtHistoria.setVisibility(View.GONE);
-                                                div.setVisibility(View.GONE);
-                                                txtCities.setVisibility(View.VISIBLE);
-                                                txtNenhum.setText(R.string.txtNenhum);
-                                                for (int i = 0; i < TAMANHO; i++) {
-                                                    ivArray[i].setImageResource(R.drawable.none);
-                                                    ivArray[i].setClickable(false);
-                                                }
+//                                                ivArray[50].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[50], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+
+//                                                ivArray[51].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[51], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[52].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[52], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[53].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[53], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[54].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[54], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[55].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[55], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[56].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[56], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                if (premium3.size() > 0) {
+//                                                    ivArray[57].setOnClickListener(new View.OnClickListener() {
+//                                                        @Override
+//                                                        public void onClick(View v) {
+//                                                            Empresa e = getEmpresa(id[57], empresas);
+//
+//                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                            intent.putExtra("empresa", e);
+//                                                            intent.putExtra("voltar", Main);
+//                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                            startActivity(intent);
+//                                                        }
+//                                                    });
+//                                                } else {
+//                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[57].getLayoutParams();
+//                                                    params.topMargin = 0;
+//                                                }
+//
+//                                                ivArray[58].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[58], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[59].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[59], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[60].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[60], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[61].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[61], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[62].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[62], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[63].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[63], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                if (premium3.size() > 0) {
+//                                                    ivArray[64].setOnClickListener(new View.OnClickListener() {
+//                                                        @Override
+//                                                        public void onClick(View v) {
+//                                                            Empresa e = getEmpresa(id[64], empresas);
+//
+//                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                            intent.putExtra("empresa", e);
+//                                                            intent.putExtra("voltar", Main);
+//                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                            startActivity(intent);
+//                                                        }
+//                                                    });
+//                                                } else {
+//                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[64].getLayoutParams();
+//                                                    params.topMargin = 0;
+//                                                }
+//
+//                                                ivArray[65].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[65], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[66].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[66], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[67].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[67], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[68].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[68], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[69].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[69], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[70].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[70], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                if (premium3.size() > 0) {
+//                                                    ivArray[71].setOnClickListener(new View.OnClickListener() {
+//                                                        @Override
+//                                                        public void onClick(View v) {
+//                                                            Empresa e = getEmpresa(id[71], empresas);
+//
+//                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                            intent.putExtra("empresa", e);
+//                                                            intent.putExtra("voltar", Main);
+//                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                            startActivity(intent);
+//                                                        }
+//                                                    });
+//                                                } else {
+//                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[71].getLayoutParams();
+//                                                    params.topMargin = 0;
+//                                                }
+//
+//                                                ivArray[72].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[72], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[73].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[73], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[74].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[74], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[75].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[75], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[76].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[76], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[77].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[77], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[78].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[78], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[80].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[80], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                if (premium3.size() > 0) {
+//                                                    ivArray[81].setOnClickListener(new View.OnClickListener() {
+//                                                        @Override
+//                                                        public void onClick(View v) {
+//                                                            Empresa e = getEmpresa(id[81], empresas);
+//
+//                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                            intent.putExtra("empresa", e);
+//                                                            intent.putExtra("voltar", Main);
+//                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                            startActivity(intent);
+//                                                        }
+//                                                    });
+//                                                } else {
+//                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[81].getLayoutParams();
+//                                                    params.topMargin = 0;
+//                                                }
+//
+//                                                ivArray[82].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[82], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[83].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[83], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[84].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[84], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[85].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[85], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[86].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[86], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[87].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[87], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[88].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[88], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[89].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[89], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[90].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[90], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                if (premium3.size() > 0) {
+//                                                    ivArray[91].setOnClickListener(new View.OnClickListener() {
+//                                                        @Override
+//                                                        public void onClick(View v) {
+//                                                            Empresa e = getEmpresa(id[91], empresas);
+//
+//                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                            intent.putExtra("empresa", e);
+//                                                            intent.putExtra("voltar", Main);
+//                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                            startActivity(intent);
+//                                                        }
+//                                                    });
+//                                                } else {
+//                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[91].getLayoutParams();
+//                                                    params.topMargin = 0;
+//                                                }
+//
+//                                                ivArray[92].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[92], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[93].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[93], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[94].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[94], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                if (premium3.size() > 0) {
+//                                                    ivArray[95].setOnClickListener(new View.OnClickListener() {
+//                                                        @Override
+//                                                        public void onClick(View v) {
+//                                                            Empresa e = getEmpresa(id[95], empresas);
+//
+//                                                            Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                            intent.putExtra("empresa", e);
+//                                                            intent.putExtra("voltar", Main);
+//                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                            startActivity(intent);
+//                                                        }
+//                                                    });
+//                                                } else {
+//                                                    final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[95].getLayoutParams();
+//                                                    params.topMargin = 0;
+//                                                }
+//
+//                                                ivArray[96].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[96], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[97].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[97], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[98].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[98], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[99].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[99], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[100].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[100], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
+//
+//                                                ivArray[101].setOnClickListener(new View.OnClickListener() {
+//                                                    @Override
+//                                                    public void onClick(View v) {
+//                                                        Empresa e = getEmpresa(id[101], empresas);
+//
+//                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                        intent.putExtra("empresa", e);
+//                                                        intent.putExtra("voltar", Main);
+//                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                        startActivity(intent);
+//                                                    }
+//                                                });
                                             }
                                         }
                                     });
@@ -1807,11 +1836,101 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                 if (!e.equals("Selecione uma cidade")) {
                                     txtCidade.setText(e.toString());
 
-                                    final HashMap<String, String> postCidade = new HashMap<>();
-                                    postCidade.put("cidade", e.toString().substring(0, e.toString().indexOf(" -")));
+                                    HashMap<String, String> postCidade = new HashMap<>();
+                                    postCidade.put("cidade", txtCidade.getText().toString().substring(0, txtCidade.getText().toString().indexOf(" -")));
                                     postCidade.put("android", "android");
 
                                     PostResponseAsyncTask getCidade = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                        @Override
+                                        public void processFinish(String s) {
+                                            if (!s.equals("nenhum")) {
+                                                //System.out.println(s);
+                                                final String cidade_id = s;
+
+                                                final HashMap<String, String> postCidade = new HashMap<>();
+                                                postCidade.put("cidade_id", cidade_id);
+                                                postCidade.put("android", "android");
+
+                                                PostResponseAsyncTask check = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                                    @Override
+                                                    public void processFinish(String s) {
+                                                        if (s == null || s.equals("")) {
+                                                            Toast.makeText(MainActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
+                                                        } else if (s.equals("n")) {
+                                                            for (int i = 0; i < TAMANHO; i++) {
+                                                                ivArray[i].setImageResource(R.drawable.none);
+                                                                ivArray[i].setClickable(false);
+                                                            }
+
+                                                            spnMargin(0, 35, 0, 0);
+                                                            imgCity.setVisibility(View.GONE);
+                                                            txtHistoria.setVisibility(View.GONE);
+                                                            div.setVisibility(View.GONE);
+                                                            txtCities.setVisibility(View.VISIBLE);
+                                                            txtNenhum.setText(R.string.txtNenhum);
+
+                                                            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+                                                            startActivity(intent);
+                                                        } else {
+                                                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                                                @Override
+                                                                public void processFinish(String s) {
+                                                                    if (!s.equals("null")) {
+                                                                        txtCities.setVisibility(View.GONE);
+                                                                        spnMargin(0, 0, 0, 0);
+                                                                        imgCity.setVisibility(View.VISIBLE);
+                                                                        txtHistoria.setVisibility(View.VISIBLE);
+                                                                        div.setVisibility(View.VISIBLE);
+
+                                                                        fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
+
+                                                                        int d = width(width, 4);
+                                                                        Picasso.with(MainActivity.this)
+                                                                                .load(img + fotos.get(0).foto)
+                                                                                .transform(new CircleTransform())
+                                                                                .centerCrop()
+                                                                                .resize(d, d)
+                                                                                .placeholder(R.drawable.perfil1)
+                                                                                .into(imgCity);
+
+                                                                        imgCity.setOnClickListener(new View.OnClickListener() {
+                                                                            @Override
+                                                                            public void onClick(View v) {
+                                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                                intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                                intent.putExtra("fotos", fotos);
+                                                                                startActivity(intent);
+                                                                            }
+                                                                        });
+
+                                                                        txtHistoria.setOnClickListener(new View.OnClickListener() {
+                                                                            @Override
+                                                                            public void onClick(View v) {
+                                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                                intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                                intent.putExtra("fotos", fotos);
+                                                                                startActivity(intent);
+                                                                            }
+                                                                        });
+                                                                    }
+                                                                }
+                                                            });
+                                                            getFotos.execute(getFotosUrl);
+                                                        }
+                                                    }
+                                                });
+                                                check.execute(checkCidadePossuiEmpresaPremiumUrl);
+                                            }
+                                        }
+                                    });
+                                    getCidade.execute(getCidadeUrl);
+
+                                    postCidade = new HashMap<>();
+                                    postCidade.put("cidade", e.toString().substring(0, e.toString().indexOf(" -")));
+                                    postCidade.put("android", "android");
+
+                                    getCidade = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
                                         @Override
                                         public void processFinish(String s) {
                                             if (!s.equals("nenhum")) {
@@ -1825,51 +1944,6 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                     public void processFinish(String s) {
                                                         //System.out.println(s);
                                                         if (!s.equals("nenhum")) {
-                                                            final HashMap<String, String> postCidade = new HashMap<>();
-                                                            postCidade.put("cidade_id", cidade_id);
-                                                            postCidade.put("android", "android");
-
-                                                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                                @Override
-                                                                public void processFinish(String s) {
-                                                                    txtCities.setVisibility(View.GONE);
-                                                                    spnMargin(0, 0, 0, 0);
-                                                                    imgCity.setVisibility(View.VISIBLE);
-                                                                    txtHistoria.setVisibility(View.VISIBLE);
-                                                                    div.setVisibility(View.VISIBLE);
-
-                                                                    fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
-
-                                                                    int d = width(width, 4);
-                                                                    Picasso.with(MainActivity.this)
-                                                                            .load(img + fotos.get(0).foto)
-                                                                            .transform(new CircleTransform())
-                                                                            .centerCrop()
-                                                                            .resize(d, d)
-                                                                            .into(imgCity);
-
-                                                                    imgCity.setOnClickListener(new View.OnClickListener() {
-                                                                        @Override
-                                                                        public void onClick(View v) {
-                                                                            Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                            intent.putExtra("fotos", fotos);
-                                                                            startActivity(intent);
-                                                                        }
-                                                                    });
-
-                                                                    txtHistoria.setOnClickListener(new View.OnClickListener() {
-                                                                        @Override
-                                                                        public void onClick(View v) {
-                                                                            Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                            intent.putExtra("fotos", fotos);
-                                                                            startActivity(intent);
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                            getFotos.execute(getFotosUrl);
 
                                                             txtNenhum.setText("");
                                                             empresas = new JsonConverter<Empresa>().toArrayList(s, Empresa.class);
@@ -2627,714 +2701,698 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                                 }
                                                             });
 
-                                                            ivArray[50].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[50], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[51].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[51], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[52].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[52], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[53].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[53], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[54].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[54], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[55].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[55], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[56].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[56], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[57].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[57], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[57].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-                                                            ivArray[58].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[58], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[59].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[59], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[60].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[60], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[61].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[61], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[62].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[62], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[63].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[63], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[64].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[64], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[64].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-                                                            ivArray[65].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[65], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[66].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[66], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[67].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[67], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[68].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[68], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[69].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[69], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[70].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[70], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[71].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[71], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[71].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-                                                            ivArray[72].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[72], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[73].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[73], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[74].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[74], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[75].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[75], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[76].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[76], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[77].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[77], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[78].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[78], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[80].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[80], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[81].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[81], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[81].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-                                                            ivArray[82].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[82], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[83].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[83], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[84].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[84], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[85].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[85], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[86].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[86], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[87].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[87], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[88].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[88], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[89].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[89], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[90].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[90], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[91].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[91], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[91].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-                                                            ivArray[92].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[92], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[93].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[93], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[94].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[94], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[95].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[95], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[95].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-                                                            ivArray[96].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[96], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[97].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[97], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[98].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[98], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[99].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[99], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[100].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[100], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[101].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[101], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-                                                        } else {
-                                                            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            intent.putExtra("direto", 1);
-                                                            startActivity(intent);
-
-                                                            spnMargin(0, 35, 0, 0);
-                                                            imgCity.setVisibility(View.GONE);
-                                                            txtHistoria.setVisibility(View.GONE);
-                                                            div.setVisibility(View.GONE);
-                                                            txtCities.setVisibility(View.VISIBLE);
-                                                            txtNenhum.setText(R.string.txtNenhum);
-                                                            for (int i = 0; i < TAMANHO; i++) {
-                                                                ivArray[i].setImageResource(R.drawable.none);
-                                                                ivArray[i].setClickable(false);
-                                                            }
+//                                                            ivArray[50].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[50], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+
+//                                                            ivArray[51].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[51], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[52].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[52], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[53].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[53], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[54].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[54], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[55].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[55], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[56].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[56], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[57].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[57], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[57].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//                                                            ivArray[58].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[58], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[59].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[59], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[60].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[60], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[61].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[61], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[62].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[62], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[63].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[63], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[64].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[64], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[64].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//                                                            ivArray[65].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[65], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[66].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[66], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[67].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[67], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[68].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[68], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[69].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[69], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[70].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[70], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[71].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[71], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[71].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//                                                            ivArray[72].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[72], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[73].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[73], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[74].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[74], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[75].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[75], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[76].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[76], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[77].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[77], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[78].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[78], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[80].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[80], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[81].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[81], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[81].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//                                                            ivArray[82].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[82], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[83].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[83], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[84].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[84], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[85].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[85], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[86].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[86], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[87].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[87], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[88].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[88], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[89].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[89], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[90].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[90], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[91].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[91], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[91].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//                                                            ivArray[92].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[92], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[93].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[93], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[94].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[94], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[95].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[95], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[95].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//                                                            ivArray[96].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[96], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[97].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[97], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[98].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[98], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[99].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[99], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[100].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[100], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[101].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[101], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
                                                         }
                                                     }
                                                 });
@@ -3416,6 +3474,92 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                             if (!s.equals("nenhum")) {
                                                 //System.out.println(s);
                                                 final String cidade_id = s;
+
+                                                final HashMap<String, String> postCidade = new HashMap<>();
+                                                postCidade.put("cidade_id", cidade_id);
+                                                postCidade.put("android", "android");
+
+                                                PostResponseAsyncTask check = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                                    @Override
+                                                    public void processFinish(String s) {
+                                                        if (s == null || s.equals("")) {
+                                                            Toast.makeText(MainActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
+                                                        } else if (s.equals("n")) {
+                                                            for (int i = 0; i < TAMANHO; i++) {
+                                                                ivArray[i].setImageResource(R.drawable.none);
+                                                                ivArray[i].setClickable(false);
+                                                            }
+
+                                                            spnMargin(0, 35, 0, 0);
+                                                            imgCity.setVisibility(View.GONE);
+                                                            txtHistoria.setVisibility(View.GONE);
+                                                            div.setVisibility(View.GONE);
+                                                            txtCities.setVisibility(View.VISIBLE);
+                                                            txtNenhum.setText(R.string.txtNenhum);
+
+                                                            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                                                            intent.putExtra("cidade", txtCidade.getText().toString());
+                                                            startActivity(intent);
+                                                        } else {
+                                                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                                                @Override
+                                                                public void processFinish(String s) {
+                                                                    if (!s.equals("null")) {
+                                                                        txtCities.setVisibility(View.GONE);
+                                                                        spnMargin(0, 0, 0, 0);
+                                                                        imgCity.setVisibility(View.VISIBLE);
+                                                                        txtHistoria.setVisibility(View.VISIBLE);
+                                                                        div.setVisibility(View.VISIBLE);
+
+                                                                        fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
+
+                                                                        int d = width(width, 4);
+                                                                        Picasso.with(MainActivity.this)
+                                                                                .load(img + fotos.get(0).foto)
+                                                                                .transform(new CircleTransform())
+                                                                                .centerCrop()
+                                                                                .resize(d, d)
+                                                                                .placeholder(R.drawable.perfil1)
+                                                                                .into(imgCity);
+
+                                                                        imgCity.setOnClickListener(new View.OnClickListener() {
+                                                                            @Override
+                                                                            public void onClick(View v) {
+                                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                                intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                                intent.putExtra("fotos", fotos);
+                                                                                startActivity(intent);
+                                                                            }
+                                                                        });
+
+                                                                        txtHistoria.setOnClickListener(new View.OnClickListener() {
+                                                                            @Override
+                                                                            public void onClick(View v) {
+                                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
+                                                                                intent.putExtra("cidade", txtCidade.getText().toString());
+                                                                                intent.putExtra("fotos", fotos);
+                                                                                startActivity(intent);
+                                                                            }
+                                                                        });
+                                                                    }
+                                                                }
+                                                            });
+                                                            getFotos.execute(getFotosUrl);
+                                                        }
+                                                    }
+                                                });
+                                                check.execute(checkCidadePossuiEmpresaPremiumUrl);
+                                            }
+                                        }
+                                    });
+                                    getCidade.execute(getCidadeUrl);
+
+                                    getCidade = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
+                                        @Override
+                                        public void processFinish(String s) {
+                                            if (!s.equals("nenhum")) {
+                                                //System.out.println(s);
+                                                final String cidade_id = s;
                                                 HashMap<String, String> postId = new HashMap<>();
                                                 postId.put("id", s);
                                                 postId.put("android", "android");
@@ -3424,51 +3568,6 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                     public void processFinish(String s) {
                                                         //System.out.println(s);
                                                         if (!s.equals("nenhum")) {
-                                                            final HashMap<String, String> postCidade = new HashMap<>();
-                                                            postCidade.put("cidade_id", cidade_id);
-                                                            postCidade.put("android", "android");
-
-                                                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                                @Override
-                                                                public void processFinish(String s) {
-                                                                    txtCities.setVisibility(View.GONE);
-                                                                    spnMargin(0, 0, 0, 0);
-                                                                    imgCity.setVisibility(View.VISIBLE);
-                                                                    txtHistoria.setVisibility(View.VISIBLE);
-                                                                    div.setVisibility(View.VISIBLE);
-
-                                                                    fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
-
-                                                                    int d = width(width, 4);
-                                                                    Picasso.with(MainActivity.this)
-                                                                            .load(img + fotos.get(0).foto)
-                                                                            .transform(new CircleTransform())
-                                                                            .centerCrop()
-                                                                            .resize(d, d)
-                                                                            .into(imgCity);
-
-                                                                    imgCity.setOnClickListener(new View.OnClickListener() {
-                                                                        @Override
-                                                                        public void onClick(View v) {
-                                                                            Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                            intent.putExtra("fotos", fotos);
-                                                                            startActivity(intent);
-                                                                        }
-                                                                    });
-
-                                                                    txtHistoria.setOnClickListener(new View.OnClickListener() {
-                                                                        @Override
-                                                                        public void onClick(View v) {
-                                                                            Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                            intent.putExtra("fotos", fotos);
-                                                                            startActivity(intent);
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                            getFotos.execute(getFotosUrl);
 
                                                             txtNenhum.setText("");
                                                             empresas = new JsonConverter<Empresa>().toArrayList(s, Empresa.class);
@@ -4231,720 +4330,704 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                                 }
                                                             });
 
-                                                            ivArray[50].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[50], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[51].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[51], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[52].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[52], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[53].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[53], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[54].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[54], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[55].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[55], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[56].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[56], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[57].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[57], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[57].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-
-                                                            ivArray[58].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[58], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[59].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[59], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[60].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[60], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[61].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[61], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[62].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[62], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[63].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[63], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[64].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[64], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[64].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-
-                                                            ivArray[65].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[65], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[66].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[66], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[67].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[67], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[68].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[68], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[69].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[69], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[70].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[70], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[71].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[71], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[71].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-
-                                                            ivArray[72].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[72], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[73].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[73], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[74].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[74], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[75].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[75], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[76].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[76], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[77].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[77], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[78].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[78], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[80].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[80], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[81].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[81], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[81].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-
-                                                            ivArray[82].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[82], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[83].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[83], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[84].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[84], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[85].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[85], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[86].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[86], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[87].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[87], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[88].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[88], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[89].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[89], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[90].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[90], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[91].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[91], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[91].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-
-                                                            ivArray[92].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[92], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[93].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[93], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[94].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[94], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            if (premium3.size() > 0) {
-                                                                ivArray[95].setOnClickListener(new View.OnClickListener() {
-                                                                    @Override
-                                                                    public void onClick(View v) {
-                                                                        Empresa e = getEmpresa(id[95], empresas);
-
-                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                        intent.putExtra("empresa", e);
-                                                                        intent.putExtra("voltar", Main);
-                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                        startActivity(intent);
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[95].getLayoutParams();
-                                                                params.topMargin = 0;
-                                                            }
-
-
-                                                            ivArray[96].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[96], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[97].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[97], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[98].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[98], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[99].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[99], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[100].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[100], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-
-                                                            ivArray[101].setOnClickListener(new View.OnClickListener() {
-                                                                @Override
-                                                                public void onClick(View v) {
-                                                                    Empresa e = getEmpresa(id[101], empresas);
-
-                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
-                                                                    intent.putExtra("empresa", e);
-                                                                    intent.putExtra("voltar", Main);
-                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                    startActivity(intent);
-                                                                }
-                                                            });
-                                                        } else {
-                                                            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            intent.putExtra("direto", 1);
-                                                            startActivity(intent);
-
-                                                            spnMargin(0, 35, 0, 0);
-                                                            imgCity.setVisibility(View.GONE);
-                                                            txtHistoria.setVisibility(View.GONE);
-                                                            div.setVisibility(View.GONE);
-                                                            txtCities.setVisibility(View.VISIBLE);
-                                                            txtNenhum.setText(R.string.txtNenhum);
-                                                            for (int i = 0; i < TAMANHO; i++) {
-                                                                ivArray[i].setImageResource(R.drawable.none);
-                                                                ivArray[i].setClickable(false);
-                                                            }
+//                                                            ivArray[50].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[50], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+
+//                                                            ivArray[51].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[51], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[52].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[52], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[53].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[53], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[54].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[54], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[55].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[55], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[56].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[56], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[57].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[57], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[57].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//
+//                                                            ivArray[58].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[58], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[59].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[59], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[60].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[60], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[61].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[61], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[62].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[62], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[63].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[63], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[64].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[64], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[64].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//
+//                                                            ivArray[65].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[65], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[66].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[66], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[67].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[67], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[68].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[68], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[69].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[69], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[70].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[70], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[71].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[71], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[71].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//
+//                                                            ivArray[72].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[72], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[73].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[73], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[74].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[74], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[75].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[75], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[76].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[76], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[77].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[77], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[78].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[78], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[80].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[80], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[81].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[81], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[81].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//
+//                                                            ivArray[82].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[82], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[83].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[83], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[84].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[84], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[85].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[85], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[86].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[86], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[87].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[87], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[88].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[88], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[89].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[89], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[90].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[90], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[91].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[91], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[91].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//
+//                                                            ivArray[92].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[92], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[93].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[93], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[94].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[94], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            if (premium3.size() > 0) {
+//                                                                ivArray[95].setOnClickListener(new View.OnClickListener() {
+//                                                                    @Override
+//                                                                    public void onClick(View v) {
+//                                                                        Empresa e = getEmpresa(id[95], empresas);
+//
+//                                                                        Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                        intent.putExtra("empresa", e);
+//                                                                        intent.putExtra("voltar", Main);
+//                                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                        startActivity(intent);
+//                                                                    }
+//                                                                });
+//                                                            } else {
+//                                                                final ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) ivArray[95].getLayoutParams();
+//                                                                params.topMargin = 0;
+//                                                            }
+//
+//
+//                                                            ivArray[96].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[96], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[97].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[97], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[98].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[98], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[99].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[99], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[100].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[100], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
+//
+//                                                            ivArray[101].setOnClickListener(new View.OnClickListener() {
+//                                                                @Override
+//                                                                public void onClick(View v) {
+//                                                                    Empresa e = getEmpresa(id[101], empresas);
+//
+//                                                                    Intent intent = new Intent(MainActivity.this, DetalhesPremiumActivity.class);
+//                                                                    intent.putExtra("empresa", e);
+//                                                                    intent.putExtra("voltar", Main);
+//                                                                    intent.putExtra("cidade", txtCidade.getText().toString());
+//                                                                    startActivity(intent);
+//                                                                }
+//                                                            });
                                                         }
                                                     }
                                                 });
