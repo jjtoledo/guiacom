@@ -1,6 +1,8 @@
 package com.jose.guiacom;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Point;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -8,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.util.TypedValue;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -52,6 +56,11 @@ public class DetalhesCidadeActivity extends AppCompatActivity {
         ab.setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp);
         ab.setDisplayShowCustomEnabled(true); // enable overriding the default toolbar layout
         ab.setDisplayShowTitleEnabled(false); // disable the default title element here (for centered title)
+
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        final int width = size.x;
 
         ImageButton btnVoltar = (ImageButton) findViewById(R.id.btnVoltar);
         btnVoltar.setOnClickListener(new View.OnClickListener() {
@@ -181,10 +190,11 @@ public class DetalhesCidadeActivity extends AppCompatActivity {
                                 txtApoio.setVisibility(View.VISIBLE);
 
                                 foto_pref.setVisibility(View.VISIBLE);
+                                int d = width(width, 2);
                                 Picasso.with(DetalhesCidadeActivity.this)
                                         .load(img + detalhes.get(0).foto_pref)
+                                        .resize(d, 0)
                                         .into(foto_pref);
-
                             }
                             txtDescricao.setText(detalhes.get(0).descricao);
                         }
@@ -236,5 +246,33 @@ public class DetalhesCidadeActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public int width(int width, int tipo){
+        Double result;
+        switch (tipo){
+            case 1:
+                result = (width-(width*converte(width, 32))-(width*converte(width, 10)))*0.3333;
+                return result.intValue()+1;
+            case 2:
+                result = (width-(width*converte(width, 32)))*0.61;
+                return result.intValue();
+            case 3:
+                result = width-(width*converte(width, 32));
+                return result.intValue()+1;
+            case 4:
+                result = (width-(width*converte(width, 32))-(width*converte(width, 10)))*0.20;
+                return result.intValue()+1;
+        }
+        return 0;
+    }
+
+    public float dpToPx(int dp) {
+        Resources r = getResources();
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics());
+    }
+
+    public double converte(int width, int dp) {
+        return dpToPx(dp)/width;
     }
 }
