@@ -15,6 +15,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -204,7 +205,6 @@ public class DetalhesPremiumActivity extends AppCompatActivity implements OnMapR
                     Toast.makeText(DetalhesPremiumActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
                 } else {
                     estado = new JsonConverter<Estado>().toArrayList(s, Estado.class);
-                    //System.out.print                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ln(s);
 
                     tvEmpresa.setText(R.string.nome_title);
                     tvBairro.setText(R.string.bairro_title);
@@ -305,7 +305,7 @@ public class DetalhesPremiumActivity extends AppCompatActivity implements OnMapR
                             if (s.equals("") || s == null){
                                 Toast.makeText(DetalhesPremiumActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
                             } else {
-                                //System.out.println(s);
+//                                Log.i("Maps", s);
                                 lat = Double.valueOf(s.substring(s.indexOf("[")+1,s.indexOf(",")));
                                 //System.out.println(lat);
 

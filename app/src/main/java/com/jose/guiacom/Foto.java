@@ -11,4 +11,6 @@ import java.io.Serializable;
 public class Foto implements Serializable {
     @SerializedName("foto")
     public String foto;
+    @SerializedName("descricao")
+    public String descricao;
 }

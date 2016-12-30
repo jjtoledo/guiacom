@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
@@ -78,6 +79,8 @@ public class CustomSwipeAdapter extends PagerAdapter {
             Picasso.with(context)
                     .load(img + fotos.get(position).foto)
                     .into(iv);
+            TextView descricao = (TextView) v.findViewById(R.id.descricao);
+            descricao.setText(fotos.get(position).descricao);
             container.addView(v);
         }
 
