@@ -81,6 +81,7 @@
         android:id="@+id/Divisor1"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
+        android:visibility="gone"
         android:layout_below="@+id/imgCity"
         android:background="#A3A3A3"
         android:layout_alignParentEnd="true"

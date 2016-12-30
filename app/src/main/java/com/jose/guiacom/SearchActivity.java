@@ -59,6 +59,7 @@ public class SearchActivity extends AppCompatActivity implements Urls {
     String id = "", cidade, cidadeSigla;
     ImageView imgCity;
     TextView txtHistoria;
+    View div;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +80,8 @@ public class SearchActivity extends AppCompatActivity implements Urls {
         Point size = new Point();
         display.getSize(size);
         final int width = size.x;
+
+        div = findViewById(R.id.Divisor1);
 
         lvEmpresas = (ListView) findViewById(R.id.lvEmpresas);
 
@@ -147,7 +150,6 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                                                         PostResponseAsyncTask check = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
                                                             @Override
                                                             public void processFinish(String s) {
-                                                                Log.i("TEM", s);
                                                                 if (s == null || s.equals("")) {
                                                                     Toast.makeText(SearchActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
                                                                 } else if (s.equals("s")) {
@@ -324,7 +326,6 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                         PostResponseAsyncTask check = new PostResponseAsyncTask(SearchActivity.this, postCidade, new AsyncResponse() {
                             @Override
                             public void processFinish(String s) {
-                                Log.i("TEM", s);
                                 if (s == null || s.equals("")) {
                                     Toast.makeText(SearchActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
                                 } else if (s.equals("n")) {
@@ -334,6 +335,7 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                                             if (!s.equals("null")) {
                                                 imgCity.setVisibility(View.VISIBLE);
                                                 txtHistoria.setVisibility(View.VISIBLE);
+                                                div.setVisibility(View.VISIBLE);
 
                                                 fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
 
@@ -369,6 +371,8 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                                         }
                                     });
                                     getFotos.execute(getFotosUrl);
+                                } else {
+                                    div.setVisibility(View.GONE);
                                 }
                             }
                         });
