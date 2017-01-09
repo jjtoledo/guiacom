@@ -344,7 +344,7 @@ public class SearchActivity extends AppCompatActivity implements Urls {
                                                         .load(img + fotos.get(0).foto)
                                                         .transform(new CircleTransform())
                                                         .centerCrop()
-                                                        .placeholder(R.drawable.perfil1)
+                                                        .placeholder(R.drawable.place)
                                                         .resize(d, d)
                                                         .into(imgCity);
 

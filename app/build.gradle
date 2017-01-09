@@ -9,7 +9,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 27
-        versionName "4.1.1"
+        versionName "4.1.0"
     }
     buildTypes {
         debug {
@@ -31,7 +31,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support:design:25.1.0'
-    compile 'com.google.android.gms:play-services:10.0.1'
+    compile 'com.google.android.gms:play-services:8.4.0'
     compile files('libs/GenAsync.jar')
     compile files('libs/KGJsonConverter.jar')
     compile files('libs/gson-2.2.4.jar')

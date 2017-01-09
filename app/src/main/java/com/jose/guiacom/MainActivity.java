@@ -295,7 +295,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                         .transform(new CircleTransform())
                                                         .centerCrop()
                                                         .resize(d, d)
-                                                        .placeholder(R.drawable.perfil1)
+                                                        .placeholder(R.drawable.place)
                                                         .into(imgCity);
 
                                                 imgCity.setOnClickListener(new View.OnClickListener() {
@@ -1891,7 +1891,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                                                 .transform(new CircleTransform())
                                                                                 .centerCrop()
                                                                                 .resize(d, d)
-                                                                                .placeholder(R.drawable.perfil1)
+                                                                                .placeholder(R.drawable.place)
                                                                                 .into(imgCity);
 
                                                                         imgCity.setOnClickListener(new View.OnClickListener() {
@@ -3519,7 +3519,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                                                 .transform(new CircleTransform())
                                                                                 .centerCrop()
                                                                                 .resize(d, d)
-                                                                                .placeholder(R.drawable.perfil1)
+                                                                                .placeholder(R.drawable.place)
                                                                                 .into(imgCity);
 
                                                                         imgCity.setOnClickListener(new View.OnClickListener() {
