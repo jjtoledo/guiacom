@@ -9,6 +9,7 @@ public interface Urls {
     String getCidadeUrl = url + "getCidade.php";
     String getCidadeNomeUrl = url + "getCidadeNome.php";
     String checkCidadePossuiEmpresaPremiumUrl = url + "checkCidadePossuiEmpresaPremium.php";
+    String checkPossuiCadastro1Url = url + "checkPossuiCadastro1.php";
     String getEstadoUrl = url + "getEstado.php";
     String getDetalhesUrl = url + "getDetalhes.php";
     String getFotosUrl = url + "getFotos.php";
