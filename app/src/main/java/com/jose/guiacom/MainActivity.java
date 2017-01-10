@@ -55,21 +55,9 @@ public class MainActivity extends AppCompatActivity implements Urls {
     ImageView[] ivArray;
     ImageView imgCity;
     View divisor, div;
-    Integer[] tipo = {
-            1,1,1,2,1,1,3,1,2,1,
-            1,1,1,3,1,1,2,2,1,1,
-            3,1,1,2,1,1,1,2,1,1,
-            3,1,1,1,1,1,2,2,1,1,
-            3,2,1,1,3,1,1,1,1,1,
-            2,1,1,1,2,1,1,3,1,2,
-            1,1,1,1,3,1,1,2,2,1,
-            1,3,1,1,2,1,1,1,2,1,
-            1,3,1,1,1,1,1,2,2,1,
-            1,3,2,1,1,3,1,1,1,1,
-            1,2};
+    Integer[] tipo;
 
-    final int TAMANHO = 51;
-    int possuiCadastro1 = 0;
+    int TAMANHO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +65,20 @@ public class MainActivity extends AppCompatActivity implements Urls {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        TAMANHO = 51;
+        tipo = new Integer[]{
+                1, 1, 1, 2, 1, 1, 3, 1, 2, 1,
+                1, 1, 1, 3, 1, 1, 2, 2, 1, 1,
+                3, 1, 1, 2, 1, 1, 1, 2, 1, 1,
+                3, 1, 1, 1, 1, 1, 2, 2, 1, 1,
+                3, 2, 1, 1, 3, 1, 1, 1, 1, 1,
+                2, 1, 1, 1, 2, 1, 1, 3, 1, 2,
+                1, 1, 1, 1, 3, 1, 1, 2, 2, 1,
+                1, 3, 1, 1, 2, 1, 1, 1, 2, 1,
+                1, 3, 1, 1, 1, 1, 1, 2, 2, 1,
+                1, 3, 2, 1, 1, 3, 1, 1, 1, 1,
+                1, 2};
 
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -267,7 +269,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                 if (s == null || s.equals("")) {
                                     Toast.makeText(MainActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
                                 } else if (s.equals("n")) {
-                                    for (int i = 0; i < TAMANHO; i++) {
+                                    for (int i = 0; i < ivArray.length; i++) {
                                         ivArray[i].setImageResource(R.drawable.none);
                                         ivArray[i].setClickable(false);
                                     }
@@ -323,6 +325,12 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                         startActivity(intent);
                                                     }
                                                 });
+                                            } else {
+                                                spnMargin(0, 35, 0, 0);
+                                                imgCity.setVisibility(View.GONE);
+                                                txtHistoria.setVisibility(View.GONE);
+                                                div.setVisibility(View.GONE);
+                                                txtCities.setVisibility(View.VISIBLE);
                                             }
                                         }
                                     });
@@ -411,9 +419,11 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                 }
 
                                                 if (!t) {
-                                                    for (int i = 0; i < tipo.length; i++) {
+                                                    for (int i = 0; i < TAMANHO; i++) {
                                                         tipo[i] = 1;
                                                     }
+
+                                                    TAMANHO = 30;
 
                                                     setViews();
                                                 }
@@ -421,7 +431,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                 final int[] x = {0, 0, 0};
                                                 final int[] id = new int[TAMANHO];
 
-                                                for (int i = 0; i < ivArray.length; i++) {
+                                                for (int i = 0; i < TAMANHO; i++) {
                                                     String logo;
                                                     int d;
                                                     switch (tipo[i]) {
@@ -487,228 +497,16 @@ public class MainActivity extends AppCompatActivity implements Urls {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                                 Object e = parent.getItemAtPosition(position);
-                                if (!e.equals("Selecione uma cidade")) {
-                                    txtCidade.setText(e.toString());
-
-                                    HashMap<String, String> postCidade = new HashMap<>();
-                                    postCidade.put("cidade", txtCidade.getText().toString().substring(0, txtCidade.getText().toString().indexOf(" -")));
-                                    postCidade.put("android", "android");
-
-                                    PostResponseAsyncTask getCidade = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                        @Override
-                                        public void processFinish(String s) {
-                                            if (!s.equals("nenhum")) {
-                                                //System.out.println(s);
-                                                final String cidade_id = s;
-
-                                                final HashMap<String, String> postCidade = new HashMap<>();
-                                                postCidade.put("cidade_id", cidade_id);
-                                                postCidade.put("android", "android");
-
-                                                PostResponseAsyncTask check = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                    @Override
-                                                    public void processFinish(String s) {
-                                                        if (s == null || s.equals("")) {
-                                                            Toast.makeText(MainActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
-                                                        } else if (s.equals("n")) {
-                                                            for (int i = 0; i < TAMANHO; i++) {
-                                                                ivArray[i].setImageResource(R.drawable.none);
-                                                                ivArray[i].setClickable(false);
-                                                            }
-
-                                                            spnMargin(0, 35, 0, 0);
-                                                            imgCity.setVisibility(View.GONE);
-                                                            txtHistoria.setVisibility(View.GONE);
-                                                            div.setVisibility(View.GONE);
-                                                            txtCities.setVisibility(View.VISIBLE);
-                                                            txtNenhum.setText(R.string.txtNenhum);
-
-                                                            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            startActivity(intent);
-                                                        } else {
-                                                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                                @Override
-                                                                public void processFinish(String s) {
-                                                                    if (!s.equals("null")) {
-                                                                        txtCities.setVisibility(View.GONE);
-                                                                        spnMargin(0, 0, 0, 0);
-                                                                        imgCity.setVisibility(View.VISIBLE);
-                                                                        txtHistoria.setVisibility(View.VISIBLE);
-                                                                        div.setVisibility(View.VISIBLE);
-
-                                                                        fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
-
-                                                                        int d = width(width, 4);
-                                                                        Picasso.with(MainActivity.this)
-                                                                                .load(img + fotos.get(0).foto)
-                                                                                .transform(new CircleTransform())
-                                                                                .centerCrop()
-                                                                                .resize(d, d)
-                                                                                .placeholder(R.drawable.place)
-                                                                                .into(imgCity);
-
-                                                                        imgCity.setOnClickListener(new View.OnClickListener() {
-                                                                            @Override
-                                                                            public void onClick(View v) {
-                                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                                intent.putExtra("fotos", fotos);
-                                                                                startActivity(intent);
-                                                                            }
-                                                                        });
-
-                                                                        txtHistoria.setOnClickListener(new View.OnClickListener() {
-                                                                            @Override
-                                                                            public void onClick(View v) {
-                                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                                intent.putExtra("fotos", fotos);
-                                                                                startActivity(intent);
-                                                                            }
-                                                                        });
-                                                                    }
-                                                                }
-                                                            });
-                                                            getFotos.execute(getFotosUrl);
-                                                        }
-                                                    }
-                                                });
-                                                check.execute(checkCidadePossuiEmpresaPremiumUrl);
-                                            }
-                                        }
-                                    });
-                                    getCidade.execute(getCidadeUrl);
-
-                                    postCidade = new HashMap<>();
-                                    postCidade.put("cidade", e.toString().substring(0, e.toString().indexOf(" -")));
-                                    postCidade.put("android", "android");
-
-                                    getCidade = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                        @Override
-                                        public void processFinish(String s) {
-                                            if (!s.equals("nenhum")) {
-                                                //System.out.println(s);
-                                                final String cidade_id = s;
-                                                HashMap<String, String> postId = new HashMap<>();
-                                                postId.put("id", s);
-                                                postId.put("android", "android");
-                                                PostResponseAsyncTask readEmpresas = new PostResponseAsyncTask(MainActivity.this, postId, new AsyncResponse() {
-                                                    @Override
-                                                    public void processFinish(String s) {
-                                                        //System.out.println(s);
-                                                        if (!s.equals("nenhum")) {
-
-                                                            txtNenhum.setText("");
-                                                            empresas = new JsonConverter<Empresa>().toArrayList(s, Empresa.class);
-                                                            Collections.shuffle(empresas);
-
-                                                            premium1 = new ArrayList<>();
-                                                            premium2 = new ArrayList<>();
-                                                            premium3 = new ArrayList<>();
-
-                                                            boolean t = false;
-                                                            for (Empresa e : empresas) {
-                                                                switch (e.tipoCadastro) {
-                                                                    case 1:
-                                                                        premium1.add(e);
-                                                                        break;
-                                                                    case 2:
-                                                                        premium2.add(e);
-                                                                        t = true;
-                                                                        break;
-                                                                    case 3:
-                                                                        premium3.add(e);
-                                                                        t = true;
-                                                                        break;
-                                                                }
-                                                            }
-
-                                                            if (!t) {
-                                                                for (int i = 0; i < tipo.length; i++) {
-                                                                    tipo[i] = 1;
-                                                                }
-
-                                                                setViews();
-                                                            }
-
-                                                            final int[] x = {0, 0, 0};
-                                                            final int[] id = new int[TAMANHO];
-
-                                                            for (int i = 0; i < ivArray.length; i++) {
-                                                                String logo;
-                                                                int d;
-                                                                switch (tipo[i]) {
-                                                                    case 1:
-                                                                        if (x[0] == premium1.size()) {
-                                                                            x[0] = 0;
-                                                                            Collections.shuffle(premium1);
-                                                                        }
-                                                                        logo = img + premium1.get(x[0]).logo;
-                                                                        d = width(width, tipo[i]);
-                                                                        id[i] = premium1.get(x[0]).id;
-                                                                        Picasso.with(MainActivity.this)
-                                                                                .load(logo)
-                                                                                .resize(d, d)
-                                                                                .into(ivArray[i]);
-                                                                        x[0]++;
-                                                                        break;
-                                                                    case 2:
-                                                                        if (x[1] == premium2.size()) {
-                                                                            x[1] = 0;
-                                                                            Collections.shuffle(premium2);
-                                                                        }
-                                                                        logo = img + premium2.get(x[1]).logo;
-                                                                        d = width(width, tipo[i]);
-                                                                        id[i] = premium2.get(x[1]).id;
-                                                                        Picasso.with(MainActivity.this)
-                                                                                .load(logo)
-                                                                                .resize(d, d)
-                                                                                .into(ivArray[i]);
-                                                                        x[1]++;
-                                                                        break;
-                                                                    case 3:
-                                                                        if (premium3.size() > 0) {
-                                                                            if (x[2] == premium3.size()) {
-                                                                                x[2] = 0;
-                                                                                Collections.shuffle(premium3);
-                                                                            }
-                                                                            logo = img + premium3.get(x[2]).logo;
-                                                                            d = width(width, tipo[i]);
-                                                                            id[i] = premium3.get(x[2]).id;
-                                                                            Picasso.with(MainActivity.this)
-                                                                                    .load(logo)
-                                                                                    .resize(d, d)
-                                                                                    .into(ivArray[i]);
-                                                                            x[2]++;
-                                                                        }
-                                                                        break;
-                                                                }
-                                                            }
-
-                                                            setClicks(id);
-                                                        }
-                                                    }
-                                                });
-                                                readEmpresas.execute(listaEmpresasPremiumEmCidadeUrl);
-                                            } else
-                                                System.out.println("Erro");
-                                        }
-                                    });
-                                    getCidade.execute(getCidadeUrl);
-                                } else {
-                                    txtCidade.setText("");
-                                    txtAnunciantes.setText("");
-                                    for (int i = 0; i < TAMANHO; i++) {
-                                        ivArray[i].setImageResource(R.drawable.none);
-                                        ivArray[i].setClickable(false);
-                                    }
+                                if (!e.equals("Selecione uma cidade") && !e.equals(txtCidade.getText())) {
+                                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                                    intent.putExtra("cidade", e.toString());
+                                    startActivity(intent);
                                 }
                             }
                             @Override
                             public void onNothingSelected(AdapterView<?> parent) {
                                 txtCidade.setText("");
-                                for (int i = 0; i < TAMANHO; i++) {
+                                for (int i = 0; i < ivArray.length; i++) {
                                     ivArray[i].setImageResource(R.drawable.none);
                                     ivArray[i].setClickable(false);
                                 }
@@ -753,227 +551,16 @@ public class MainActivity extends AppCompatActivity implements Urls {
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                                 Object e = parent.getItemAtPosition(position);
                                 if (!e.equals("Selecione uma cidade")) {
-                                    txtCidade.setText(e.toString());
-                                    txtAnunciantes.setText(R.string.txtAnunciantes);
-
-                                    params.height = height.intValue()+1;
-
-                                    final HashMap<String, String> postCidade = new HashMap<>();
-                                    postCidade.put("cidade", e.toString().substring(0, e.toString().indexOf(" -")));
-                                    postCidade.put("android", "android");
-
-                                    PostResponseAsyncTask getCidade = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                        @Override
-                                        public void processFinish(String s) {
-                                            if (!s.equals("nenhum")) {
-                                                //System.out.println(s);
-                                                final String cidade_id = s;
-
-                                                final HashMap<String, String> postCidade = new HashMap<>();
-                                                postCidade.put("cidade_id", cidade_id);
-                                                postCidade.put("android", "android");
-
-                                                PostResponseAsyncTask check = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                    @Override
-                                                    public void processFinish(String s) {
-                                                        if (s == null || s.equals("")) {
-                                                            Toast.makeText(MainActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
-                                                        } else if (s.equals("n")) {
-                                                            for (int i = 0; i < TAMANHO; i++) {
-                                                                ivArray[i].setImageResource(R.drawable.none);
-                                                                ivArray[i].setClickable(false);
-                                                            }
-
-                                                            spnMargin(0, 35, 0, 0);
-                                                            imgCity.setVisibility(View.GONE);
-                                                            txtHistoria.setVisibility(View.GONE);
-                                                            div.setVisibility(View.GONE);
-                                                            txtCities.setVisibility(View.VISIBLE);
-                                                            txtNenhum.setText(R.string.txtNenhum);
-
-                                                            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-                                                            intent.putExtra("cidade", txtCidade.getText().toString());
-                                                            startActivity(intent);
-                                                        } else {
-                                                            PostResponseAsyncTask getFotos = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                                                @Override
-                                                                public void processFinish(String s) {
-                                                                    if (!s.equals("null")) {
-                                                                        txtCities.setVisibility(View.GONE);
-                                                                        spnMargin(0, 0, 0, 0);
-                                                                        imgCity.setVisibility(View.VISIBLE);
-                                                                        txtHistoria.setVisibility(View.VISIBLE);
-                                                                        div.setVisibility(View.VISIBLE);
-
-                                                                        fotos = new JsonConverter<Foto>().toArrayList(s, Foto.class);
-
-                                                                        int d = width(width, 4);
-                                                                        Picasso.with(MainActivity.this)
-                                                                                .load(img + fotos.get(0).foto)
-                                                                                .transform(new CircleTransform())
-                                                                                .centerCrop()
-                                                                                .resize(d, d)
-                                                                                .placeholder(R.drawable.place)
-                                                                                .into(imgCity);
-
-                                                                        imgCity.setOnClickListener(new View.OnClickListener() {
-                                                                            @Override
-                                                                            public void onClick(View v) {
-                                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                                intent.putExtra("fotos", fotos);
-                                                                                startActivity(intent);
-                                                                            }
-                                                                        });
-
-                                                                        txtHistoria.setOnClickListener(new View.OnClickListener() {
-                                                                            @Override
-                                                                            public void onClick(View v) {
-                                                                                Intent intent = new Intent(MainActivity.this, DetalhesCidadeActivity.class);
-                                                                                intent.putExtra("cidade", txtCidade.getText().toString());
-                                                                                intent.putExtra("fotos", fotos);
-                                                                                startActivity(intent);
-                                                                            }
-                                                                        });
-                                                                    }
-                                                                }
-                                                            });
-                                                            getFotos.execute(getFotosUrl);
-                                                        }
-                                                    }
-                                                });
-                                                check.execute(checkCidadePossuiEmpresaPremiumUrl);
-                                            }
-                                        }
-                                    });
-                                    getCidade.execute(getCidadeUrl);
-
-                                    getCidade = new PostResponseAsyncTask(MainActivity.this, postCidade, new AsyncResponse() {
-                                        @Override
-                                        public void processFinish(String s) {
-                                            if (!s.equals("nenhum")) {
-                                                //System.out.println(s);
-                                                final String cidade_id = s;
-                                                HashMap<String, String> postId = new HashMap<>();
-                                                postId.put("id", s);
-                                                postId.put("android", "android");
-                                                PostResponseAsyncTask readEmpresas = new PostResponseAsyncTask(MainActivity.this, postId, new AsyncResponse() {
-                                                    @Override
-                                                    public void processFinish(String s) {
-                                                        //System.out.println(s);
-                                                        if (!s.equals("nenhum")) {
-
-                                                            txtNenhum.setText("");
-                                                            empresas = new JsonConverter<Empresa>().toArrayList(s, Empresa.class);
-                                                            Collections.shuffle(empresas);
-
-                                                            premium1 = new ArrayList<>();
-                                                            premium2 = new ArrayList<>();
-                                                            premium3 = new ArrayList<>();
-
-                                                            boolean t = false;
-                                                            for (Empresa e : empresas) {
-                                                                switch (e.tipoCadastro) {
-                                                                    case 1:
-                                                                        premium1.add(e);
-                                                                        break;
-                                                                    case 2:
-                                                                        premium2.add(e);
-                                                                        t = true;
-                                                                        break;
-                                                                    case 3:
-                                                                        premium3.add(e);
-                                                                        t = true;
-                                                                        break;
-                                                                }
-                                                            }
-
-                                                            if (!t) {
-                                                                for (int i = 0; i < tipo.length; i++) {
-                                                                    tipo[i] = 1;
-                                                                }
-
-                                                                setViews();
-                                                            }
-
-                                                            final int[] x = {0, 0, 0};
-                                                            final int[] id = new int[TAMANHO];
-
-                                                            for (int i = 0; i < ivArray.length; i++) {
-                                                                String logo;
-                                                                int d;
-                                                                switch (tipo[i]) {
-                                                                    case 1:
-                                                                        if (x[0] == premium1.size()) {
-                                                                            x[0] = 0;
-                                                                            Collections.shuffle(premium1);
-                                                                        }
-                                                                        logo = img + premium1.get(x[0]).logo;
-                                                                        d = width(width, tipo[i]);
-                                                                        id[i] = premium1.get(x[0]).id;
-                                                                        Picasso.with(MainActivity.this)
-                                                                                .load(logo)
-                                                                                .resize(d, d)
-                                                                                .into(ivArray[i]);
-                                                                        x[0]++;
-                                                                        break;
-                                                                    case 2:
-                                                                        if (x[1] == premium2.size()) {
-                                                                            x[1] = 0;
-                                                                            Collections.shuffle(premium2);
-                                                                        }
-                                                                        logo = img + premium2.get(x[1]).logo;
-                                                                        d = width(width, tipo[i]);
-                                                                        id[i] = premium2.get(x[1]).id;
-                                                                        Picasso.with(MainActivity.this)
-                                                                                .load(logo)
-                                                                                .resize(d, d)
-                                                                                .into(ivArray[i]);
-                                                                        x[1]++;
-                                                                        break;
-                                                                    case 3:
-                                                                        if (premium3.size() > 0) {
-                                                                            if (x[2] == premium3.size()) {
-                                                                                x[2] = 0;
-                                                                                Collections.shuffle(premium3);
-                                                                            }
-                                                                            logo = img + premium3.get(x[2]).logo;
-                                                                            d = width(width, tipo[i]);
-                                                                            id[i] = premium3.get(x[2]).id;
-                                                                            Picasso.with(MainActivity.this)
-                                                                                    .load(logo)
-                                                                                    .resize(d, d)
-                                                                                    .into(ivArray[i]);
-                                                                            x[2]++;
-                                                                        }
-                                                                        break;
-                                                                }
-                                                            }
-
-                                                            setClicks(id);
-                                                        }
-                                                    }
-                                                });
-                                                readEmpresas.execute(listaEmpresasPremiumEmCidadeUrl);
-                                            } else
-                                                System.out.println("Erro");
-                                        }
-                                    });
-                                    getCidade.execute(getCidadeUrl);
-                                } else {
-                                    txtCidade.setText("");
-                                    txtAnunciantes.setText("");
-                                    for (int i = 0; i < TAMANHO; i++) {
-                                        ivArray[i].setImageResource(R.drawable.none);
-                                        ivArray[i].setClickable(false);
-                                    }
+                                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                                    intent.putExtra("cidade", e.toString());
+                                    startActivity(intent);
                                 }
                             }
 
                             @Override
                             public void onNothingSelected(AdapterView<?> parent) {
                                 txtCidade.setText("");
-                                for (int i = 0; i < TAMANHO; i++) {
+                                for (int i = 0; i < ivArray.length; i++) {
                                     ivArray[i].setImageResource(R.drawable.none);
                                     ivArray[i].setClickable(false);
                                 }
@@ -1145,6 +732,11 @@ public class MainActivity extends AppCompatActivity implements Urls {
     }
 
     public void setViews() {
+        for (int i = 30; i < ivArray.length; i++) {
+            ivArray[i].setImageResource(R.drawable.none);
+            ivArray[i].setClickable(false);
+        }
+
         RelativeLayout.LayoutParams p = (RelativeLayout.LayoutParams) ivArray[5].getLayoutParams();
         p.addRule(RelativeLayout.ALIGN_LEFT, 0);
         p.addRule(RelativeLayout.ALIGN_START, 0);
@@ -1240,6 +832,74 @@ public class MainActivity extends AppCompatActivity implements Urls {
             p.setMarginEnd((int)dpToPx(5));
         }
         ivArray[18].setLayoutParams(p);
+
+        p = (RelativeLayout.LayoutParams) ivArray[19].getLayoutParams();
+        p.addRule(RelativeLayout.BELOW, 0);
+        p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView19);
+        p.addRule(RelativeLayout.END_OF, R.id.imageView19);
+        p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView19);
+        p.addRule(RelativeLayout.ALIGN_BOTTOM, 0);
+        p.setMargins(0,0,(int)dpToPx(5),0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.setMarginEnd((int)dpToPx(5));
+        }
+        ivArray[19].setLayoutParams(p);
+
+        p = (RelativeLayout.LayoutParams) ivArray[20].getLayoutParams();
+        p.addRule(RelativeLayout.BELOW, 0);
+        p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView20);
+        p.addRule(RelativeLayout.END_OF, R.id.imageView20);
+        p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView20);
+        p.setMargins(0,0,0,0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.setMarginEnd(0);
+        }
+        ivArray[20].setLayoutParams(p);
+
+        p = (RelativeLayout.LayoutParams) ivArray[21].getLayoutParams();
+        p.addRule(RelativeLayout.BELOW, R.id.imageView19);
+        p.addRule(RelativeLayout.RIGHT_OF, 0);
+        p.addRule(RelativeLayout.END_OF, 0);
+        p.addRule(RelativeLayout.ALIGN_TOP, 0);
+        p.setMargins(0,(int)dpToPx(5),(int)dpToPx(5),0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.setMarginEnd((int)dpToPx(5));
+        }
+        ivArray[21].setLayoutParams(p);
+
+        p = (RelativeLayout.LayoutParams) ivArray[22].getLayoutParams();
+        p.addRule(RelativeLayout.BELOW, 0);
+        p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView22);
+        p.addRule(RelativeLayout.END_OF, R.id.imageView22);
+        p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView22);
+        p.setMargins(0,0,(int)dpToPx(5),0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.setMarginEnd((int)dpToPx(5));
+        }
+        ivArray[22].setLayoutParams(p);
+
+        p = (RelativeLayout.LayoutParams) ivArray[23].getLayoutParams();
+        p.addRule(RelativeLayout.BELOW, 0);
+        p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView23);
+        p.addRule(RelativeLayout.END_OF, R.id.imageView23);
+        p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView23);
+        p.setMargins(0,0,0,0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.setMarginEnd(0);
+        }
+        ivArray[23].setLayoutParams(p);
+
+        p = (RelativeLayout.LayoutParams) ivArray[29].getLayoutParams();
+        p.addRule(RelativeLayout.BELOW, 0);
+        p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView29);
+        p.addRule(RelativeLayout.END_OF, R.id.imageView29);
+        p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView29);
+        p.setMargins((int)dpToPx(5),0,0,0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.setMarginEnd(0);
+            p.setMarginStart((int)dpToPx(5));
+        }
+        ivArray[29].setLayoutParams(p);
     }
 
     public void setClicks(final int[] ids) {
