@@ -101,20 +101,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/txtHistoria"
-            android:textSize="15sp"
-            android:layout_marginTop="15sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/foto_pref"
-            android:text="@string/txtHistoria"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/txtDescricao"
             android:textSize="15sp"
             android:layout_marginTop="15sp"
-            android:layout_below="@+id/txtHistoria"
+            android:layout_below="@+id/foto_pref"
             android:text=""/>
     </RelativeLayout>
 </ScrollView>

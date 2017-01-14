@@ -26,6 +26,7 @@ import com.kosalgeek.genasync12.PostResponseAsyncTask;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 import static com.jose.guiacom.Urls.getCidadeUrl;

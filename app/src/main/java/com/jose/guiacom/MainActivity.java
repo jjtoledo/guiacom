@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -206,19 +207,6 @@ public class MainActivity extends AppCompatActivity implements Urls {
 //        ivArray[100] = (ImageView) findViewById(R.id.imageView101);
 //        ivArray[101] = (ImageView) findViewById(R.id.imageView102);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!txtCidade.getText().equals("")) {
-                    Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-                    intent.putExtra("cidade", txtCidade.getText().toString());
-                    startActivity(intent);
-                } else
-                    Toast.makeText(MainActivity.this, "Por favor, selecione uma cidade", Toast.LENGTH_LONG).show();
-            }
-        });
-
         final ActionBar ab = getSupportActionBar();
         ab.setDisplayShowCustomEnabled(true); // enable overriding the default toolbar layout
         ab.setDisplayShowTitleEnabled(false); // disable the default title element here (for centered title)
@@ -239,6 +227,8 @@ public class MainActivity extends AppCompatActivity implements Urls {
                 startActivity(intent);
             }
         });
+
+        final ImageButton btnBuscar = (ImageButton) findViewById(R.id.btn_buscar);
 
         if (cidadeSigla != null) {
             txtAnunciantes.setText(R.string.txtAnunciantes);
@@ -350,7 +340,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                     //System.out.println(s);
                     if (s == null || s.equals("")) {
                         Toast.makeText(MainActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
-                        cidadesNome.add(0, "Selecione uma cidade");
+                        cidadesNome.add(0, "Clique aqui e selecione uma cidade");
 
                         ArrayAdapter<String> cidadesAdapter =
                                 new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cidadesNome);
@@ -483,6 +473,16 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                 }
 
                                                 setClicks(id);
+
+                                                btnBuscar.setVisibility(View.VISIBLE);
+                                                btnBuscar.setOnClickListener(new View.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(View view) {
+                                                        Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                                                        intent.putExtra("cidade", txtCidade.getText().toString());
+                                                        startActivity(intent);
+                                                    }
+                                                });
                                             }
                                         }
                                     });
@@ -497,7 +497,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                                 Object e = parent.getItemAtPosition(position);
-                                if (!e.equals("Selecione uma cidade") && !e.equals(txtCidade.getText())) {
+                                if (!e.equals("Clique aqui e selecione uma cidade") && !e.equals(txtCidade.getText())) {
                                     Intent intent = new Intent(MainActivity.this, MainActivity.class);
                                     intent.putExtra("cidade", e.toString());
                                     startActivity(intent);
@@ -523,7 +523,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                     //System.out.println(s);
                     if (s == null || s.equals("")) {
                         Toast.makeText(MainActivity.this, "Por favor, verifique sua conexão com a Internet", Toast.LENGTH_LONG).show();
-                        cidadesNome.add(0, "Selecione uma cidade");
+                        cidadesNome.add(0, "Clique aqui e selecione uma cidade");
 
                         ArrayAdapter<String> cidadesAdapter =
                                 new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cidadesNome);
@@ -537,7 +537,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                         for (Cidade c : cidades)
                             cidadesNome.add(c.nome + " - " + getSigla(c.estado_id));
 
-                        cidadesNome.add(0, "Selecione uma cidade");
+                        cidadesNome.add(0, "Clique aqui e selecione uma cidade");
 
                         ArrayAdapter<String> cidadesAdapter =
                                 new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cidadesNome);
@@ -550,7 +550,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                                 Object e = parent.getItemAtPosition(position);
-                                if (!e.equals("Selecione uma cidade")) {
+                                if (!e.equals("Clique aqui e selecione uma cidade")) {
                                     Intent intent = new Intent(MainActivity.this, MainActivity.class);
                                     intent.putExtra("cidade", e.toString());
                                     startActivity(intent);
