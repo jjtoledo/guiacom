@@ -343,7 +343,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                         cidadesNome.add(0, "Clique aqui e selecione uma cidade");
 
                         ArrayAdapter<String> cidadesAdapter =
-                                new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cidadesNome);
+                                new ArrayAdapter<>(MainActivity.this, R.layout.spinner_layout, cidadesNome);
 
                         cidadesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -358,7 +358,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                         cidadesNome.add(0, cidadeSigla);
 
                         ArrayAdapter<String> cidadesAdapter =
-                                new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cidadesNome);
+                                new ArrayAdapter<>(MainActivity.this, R.layout.spinner_layout, cidadesNome);
 
                         cidadesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -526,7 +526,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                         cidadesNome.add(0, "Clique aqui e selecione uma cidade");
 
                         ArrayAdapter<String> cidadesAdapter =
-                                new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cidadesNome);
+                                new ArrayAdapter<>(MainActivity.this, R.layout.spinner_layout, cidadesNome);
 
                         cidadesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -540,7 +540,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                         cidadesNome.add(0, "Clique aqui e selecione uma cidade");
 
                         ArrayAdapter<String> cidadesAdapter =
-                                new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cidadesNome);
+                                new ArrayAdapter<>(MainActivity.this, R.layout.spinner_layout, cidadesNome);
 
                         cidadesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 

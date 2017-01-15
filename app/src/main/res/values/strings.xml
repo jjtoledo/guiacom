@@ -23,7 +23,7 @@
 
     <!-- Detalhes Cidade -->
     <string name="txtSobre">Sobre: </string>
-    <string name="txtApoio">Apoio Cultural: </string>
+    <string name="txtApoio">Apoio: </string>
 
     <!-- Segmentos -->
     <string name="title_activity_segment">Segmentos</string>
