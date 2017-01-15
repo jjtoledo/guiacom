@@ -739,12 +739,14 @@ public class MainActivity extends AppCompatActivity implements Urls {
 
         RelativeLayout.LayoutParams p = (RelativeLayout.LayoutParams) ivArray[5].getLayoutParams();
         p.addRule(RelativeLayout.ALIGN_LEFT, 0);
-        p.addRule(RelativeLayout.ALIGN_START, 0);
         p.addRule(RelativeLayout.BELOW, 0);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView4);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView5);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView5);
         p.setMargins((int)dpToPx(5),0,0,0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView5);
+            p.addRule(RelativeLayout.ALIGN_START, 0);
+        }
         ivArray[5].setLayoutParams(p);
 
         p = (RelativeLayout.LayoutParams) ivArray[6].getLayoutParams();
@@ -754,7 +756,9 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[7].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, R.id.imageView6);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView7);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView7);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView7);
+        }
         ivArray[7].setLayoutParams(p);
 
         p = (RelativeLayout.LayoutParams) ivArray[9].getLayoutParams();
@@ -764,8 +768,10 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[10].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, R.id.imageView8);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView10);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView10);
         p.setMargins(0,(int)dpToPx(5),0,0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView10);
+        }
         ivArray[10].setLayoutParams(p);
 
         p = (RelativeLayout.LayoutParams) ivArray[11].getLayoutParams();
@@ -778,34 +784,38 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[12].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, R.id.imageView10);
         p.addRule(RelativeLayout.RIGHT_OF, 0);
-        p.addRule(RelativeLayout.END_OF, 0);
         p.addRule(RelativeLayout.ALIGN_TOP, 0);
         p.setMargins(0,(int)dpToPx(5),(int)dpToPx(5),0);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, 0);
+        }
         ivArray[12].setLayoutParams(p);
 
         p = (RelativeLayout.LayoutParams) ivArray[13].getLayoutParams();
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView13);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView13);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView13);
+        if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView13);
+        }
         ivArray[13].setLayoutParams(p);
 
         p = (RelativeLayout.LayoutParams) ivArray[14].getLayoutParams();
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView14);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView14);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView14);
         p.setMargins((int)dpToPx(5),0,0,0);
         if (Build.VERSION.SDK_INT > 16) {
             p.setMarginEnd(0);
+            p.addRule(RelativeLayout.END_OF, R.id.imageView14);
             p.setMarginStart((int)dpToPx(5));
         }
         ivArray[14].setLayoutParams(p);
 
         p = (RelativeLayout.LayoutParams) ivArray[16].getLayoutParams();
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView16);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView16);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView16);
         p.setMargins((int)dpToPx(5),0,(int)dpToPx(5),0);
         if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView16);
             p.setMarginEnd((int)dpToPx(5));
             p.setMarginStart((int)dpToPx(5));
         }
@@ -814,10 +824,10 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[17].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, 0);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView17);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView17);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView17);
         p.setMargins(0,0,0,0);
         if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView17);
             p.setMarginEnd(0);
         }
         ivArray[17].setLayoutParams(p);
@@ -825,22 +835,22 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[18].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, R.id.imageView18);
         p.addRule(RelativeLayout.RIGHT_OF, 0);
-        p.addRule(RelativeLayout.END_OF, 0);
         p.addRule(RelativeLayout.ALIGN_TOP, 0);
         p.setMargins(0,(int)dpToPx(5),(int)dpToPx(5),0);
         if (Build.VERSION.SDK_INT > 16) {
             p.setMarginEnd((int)dpToPx(5));
+            p.addRule(RelativeLayout.END_OF, 0);
         }
         ivArray[18].setLayoutParams(p);
 
         p = (RelativeLayout.LayoutParams) ivArray[19].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, 0);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView19);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView19);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView19);
         p.addRule(RelativeLayout.ALIGN_BOTTOM, 0);
         p.setMargins(0,0,(int)dpToPx(5),0);
         if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView19);
             p.setMarginEnd((int)dpToPx(5));
         }
         ivArray[19].setLayoutParams(p);
@@ -848,21 +858,21 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[20].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, 0);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView20);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView20);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView20);
         p.setMargins(0,0,0,0);
         if (Build.VERSION.SDK_INT > 16) {
             p.setMarginEnd(0);
+            p.addRule(RelativeLayout.END_OF, R.id.imageView20);
         }
         ivArray[20].setLayoutParams(p);
 
         p = (RelativeLayout.LayoutParams) ivArray[21].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, R.id.imageView19);
         p.addRule(RelativeLayout.RIGHT_OF, 0);
-        p.addRule(RelativeLayout.END_OF, 0);
         p.addRule(RelativeLayout.ALIGN_TOP, 0);
         p.setMargins(0,(int)dpToPx(5),(int)dpToPx(5),0);
         if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, 0);
             p.setMarginEnd((int)dpToPx(5));
         }
         ivArray[21].setLayoutParams(p);
@@ -870,10 +880,10 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[22].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, 0);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView22);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView22);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView22);
         p.setMargins(0,0,(int)dpToPx(5),0);
         if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView22);
             p.setMarginEnd((int)dpToPx(5));
         }
         ivArray[22].setLayoutParams(p);
@@ -881,10 +891,10 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[23].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, 0);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView23);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView23);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView23);
         p.setMargins(0,0,0,0);
         if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView23);
             p.setMarginEnd(0);
         }
         ivArray[23].setLayoutParams(p);
@@ -892,10 +902,10 @@ public class MainActivity extends AppCompatActivity implements Urls {
         p = (RelativeLayout.LayoutParams) ivArray[29].getLayoutParams();
         p.addRule(RelativeLayout.BELOW, 0);
         p.addRule(RelativeLayout.RIGHT_OF, R.id.imageView29);
-        p.addRule(RelativeLayout.END_OF, R.id.imageView29);
         p.addRule(RelativeLayout.ALIGN_TOP, R.id.imageView29);
         p.setMargins((int)dpToPx(5),0,0,0);
         if (Build.VERSION.SDK_INT > 16) {
+            p.addRule(RelativeLayout.END_OF, R.id.imageView29);
             p.setMarginEnd(0);
             p.setMarginStart((int)dpToPx(5));
         }
