@@ -8,8 +8,8 @@ android {
         applicationId "com.jose.guiacom"
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 32
-        versionName "4.1.5"
+        versionCode 33
+        versionName "4.1.6"
     }
     buildTypes {
         debug {

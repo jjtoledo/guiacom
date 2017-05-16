@@ -293,7 +293,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
                                                         .transform(new CircleTransform())
                                                         .centerCrop()
                                                         .resize(d, d)
-                                                        .placeholder(R.drawable.place)
+                                                        .placeholder(R.drawable.perfil1)
                                                         .into(imgCity);
 
                                                 imgCity.setOnClickListener(new View.OnClickListener() {
