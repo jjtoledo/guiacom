@@ -735,6 +735,7 @@ public class MainActivity extends AppCompatActivity implements Urls {
         for (int i = 30; i < ivArray.length; i++) {
             ivArray[i].setImageResource(R.drawable.none);
             ivArray[i].setClickable(false);
+            ivArray[i].setVisibility(View.GONE);
         }
 
         RelativeLayout.LayoutParams p = (RelativeLayout.LayoutParams) ivArray[5].getLayoutParams();

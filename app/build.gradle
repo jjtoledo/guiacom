@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "23.0.2"
+    buildToolsVersion '25.0.3'
 
     defaultConfig {
         applicationId "com.jose.guiacom"
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 33
-        versionName "4.1.6"
+        versionCode 34
+        versionName "4.1.7"
     }
     buildTypes {
         debug {
@@ -29,8 +29,8 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
     compile 'com.google.android.gms:play-services:8.4.0'
     compile files('libs/GenAsync.jar')
     compile files('libs/KGJsonConverter.jar')
@@ -38,4 +38,5 @@ dependencies {
     compile 'com.github.amigold.fundapter:library:1.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile files('libs/AndroidMask-1.0.0.jar')
+    compile 'gr.pantrif:easy-android-splash-screen:0.0.1'
 }

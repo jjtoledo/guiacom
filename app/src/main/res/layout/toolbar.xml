@@ -14,7 +14,7 @@
 
         <ImageView
             android:id="@+id/toolbar_logo"
-            android:src="@drawable/ic_logo_topo_24dp"
+            android:src="@drawable/toolbar_logo"
             android:layout_width="110sp"
             android:layout_height="fill_parent"
             android:layout_marginEnd="30sp"
